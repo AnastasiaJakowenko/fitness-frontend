@@ -1,11 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import axios from 'axios';
-import Nav from './components/Nav';
+import Navigation from './components/Navigation.js';
 function App() {
   return (
     <div className="App">
-     app läuft!
-     <Nav/>
+    
+     <Navigation/>
     </div>
   );
 }

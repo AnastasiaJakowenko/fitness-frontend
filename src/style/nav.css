@@ -1,0 +1,9 @@
+.nav {
+    background-color: rgb(115, 136, 136);
+    
+    
+    }
+    a.nav-link  {
+      color: black;
+      text-align: end;
+    }
