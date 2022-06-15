@@ -1,0 +1,31 @@
+.fitness-h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.fitness-p {
+  margin: 1rem;
+}
+
+.fitness-h3 {
+  padding: 1rem;
+  justify-content: center;
+  width: max-content;
+}
+
+.fitness-button {
+  padding: 1rem;
+  width: 20%;
+  border-radius: 5%;
+}
+.fitness-div {
+  /* display: flex;*/
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+}
+.fitness-button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
