@@ -7,7 +7,7 @@ function Navigation() {
         <>
             <ul className="nav">
 
-                <li className="nav-item">
+                <li className="nav-item home">
                     <a className="nav-link active" href="#"><i class="fa-solid fa-bars"></i></a>
                 </li>
                 <li className="nav-item">
