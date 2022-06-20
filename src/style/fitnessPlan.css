@@ -8,24 +8,43 @@
 }
 
 .fitness-h3 {
-  padding: 1rem;
+  margin: 1rem;
+  margin-top: 1rem;
   justify-content: center;
   width: max-content;
 }
 
 .fitness-button {
-  padding: 1rem;
-  width: 20%;
-  border-radius: 5%;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-size: x-large;
 }
 .fitness-div {
+  color: white;
   /* display: flex;*/
   flex-direction: column;
   align-items: center;
-  background-color: lightgray;
+  background: rgb(24, 29, 30);
+  background: linear-gradient(
+    127deg,
+    rgba(24, 29, 30, 1) 0%,
+    rgba(24, 29, 30, 0.7413165949973739) 100%
+  );
 }
 .fitness-button-div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.fitness-button a {
+  text-decoration: none;
+  color: black;
+}
+
+.fitness-button:hover {
+  background-color: orange;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
 }
