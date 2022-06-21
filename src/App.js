@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './components/Navigation.js';
 import About from './components/About.js';
 import FitnessPlan from './components/FitnessPlan.js';
+import Kurse from './components/Kurse.js'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <div>
         <FitnessPlan />
       </div>
+      <Kurse/>
     </>
 
   );
