@@ -1,7 +1,6 @@
 import React from "react";
 import "../style/nav.css"
-// import { render } from "react-dom";
-// import  FontAwesomeIcon  from "@fortawesome/react-fontawesome";
+
 function Navigation() {
     return (
         <>
