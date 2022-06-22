@@ -2,7 +2,6 @@ import "../style/fitnessPlan.css";
 import SlideShow from "./SlideShow"
 function FitnessPlan() {
   return (
-    <>
       <div className="fitness-div">
         <h1 className="fitness-h1">Fitness Plan</h1>
         <SlideShow/>
@@ -16,7 +15,6 @@ function FitnessPlan() {
           <button className="fitness-button" ><a href="#">Register</a></button>
         </div>
       </div>
-    </>
   );
 }
 

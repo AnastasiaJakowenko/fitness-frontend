@@ -1,0 +1,30 @@
+
+
+
+.kurse h1 {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.carousel-item {
+    margin-bottom: 1rem;
+    
+}
+
+img {
+    object-fit: cover;
+    width: 100vw;
+    height: 30vh;
+}
+
+.kurse h3 {
+    background-color: rgba(97, 100, 101, 0.854);
+    width: max-content;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.h3container {
+    display: flex;
+    justify-content: center;
+}
