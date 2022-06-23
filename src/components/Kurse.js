@@ -45,7 +45,7 @@ function Kurse() {
         <Carousel.Item>
           <img
             className="d-flex w-70 h-70"
-            src={require("../img/carousel/yoga/yoga1.jpg")}
+            src={require("../img/carousel/sv/sv1.jpg")}
             alt="First slide"
           />
           <Carousel.Caption className="h3container">
@@ -55,7 +55,7 @@ function Kurse() {
         <Carousel.Item>
           <img
             className="d-flex w-70 h-70"
-            src={require("../img/carousel/yoga/yoga2.jpg")}
+            src={require("../img/carousel/sv/sv2.jpg")}
             alt="Second slide"
           />
           <Carousel.Caption className="h3container">
@@ -65,7 +65,7 @@ function Kurse() {
         <Carousel.Item>
           <img
             className="d-flex w-70 h-70"
-            src={require("../img/carousel/yoga/yoga3.jpg")}
+            src={require("../img/carousel/sv/sv3.jpg")}
             alt="Third slide"
           />
           <Carousel.Caption className="h3container">
@@ -78,7 +78,7 @@ function Kurse() {
         <Carousel.Item>
           <img
             className="d-flex w-70 h-70"
-            src={require("../img/carousel/yoga/yoga1.jpg")}
+            src={require("../img/carousel/zumba/zumba1.jpeg")}
             alt="First slide"
           />
           <Carousel.Caption className="h3container">
@@ -88,7 +88,7 @@ function Kurse() {
         <Carousel.Item>
           <img
             className="d-flex w-70 h-70"
-            src={require("../img/carousel/yoga/yoga2.jpg")}
+            src={require("../img/carousel/zumba/zumba2.jpg")}
             alt="Second slide"
           />
           <Carousel.Caption className="h3container">
@@ -98,7 +98,7 @@ function Kurse() {
         <Carousel.Item>
           <img
             className="d-flex w-70 h-70"
-            src={require("../img/carousel/yoga/yoga3.jpg")}
+            src={require("../img/carousel/zumba/zumba3.jpg")}
             alt="Third slide"
           />
           <Carousel.Caption className="h3container">

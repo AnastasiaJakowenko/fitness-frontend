@@ -1,4 +1,4 @@
-/* Footer */
+
 .footer {
     box-sizing: border-box;
     position: relative;
@@ -6,34 +6,35 @@
     background-blend-mode: darken;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    display: flex;
-    
-    justify-content: space-around;
-
 }
 
 .links {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .icons {
-    /* display: flex;
-    justify-content: space-around; */
+    display: flex;
+    font-size:2rem;
+    
+}
 
-    /* position: absolute; */
-    font-size:2.5rem;
+i {
+    padding: 1rem;
     color: #FFFFFF;
 }
 
 .textlinks a {
    color: white;
    text-decoration: none;
+   padding: 1rem;
     
 }
 
 .footer p {
     color: #F96A43;
     font-size: 0.7rem;
+    text-align: center;
+    
 }

@@ -8,9 +8,9 @@ function Footer() {
         <div className="links">
             
           <div className="icons">
-            <i className="fa-brands fa-facebook-square"></i>
-            <i className="fa-brands fa-instagram-square"></i>
-            <i className="fa-brands fa-youtube-square"></i>
+          <a href="https://de-de.facebook.com/" target="_blank"><i className="fa-brands fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/?hl=de" target="_blank"><i className="fa-brands fa-instagram-square"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i className="fa-brands fa-youtube-square"></i></a>
           </div>
 
           <div className="textlinks">
@@ -21,6 +21,7 @@ function Footer() {
         </div>
 
         <p>Copyright G5 © 2022 Magdeburg</p>
+       
       </div>
 
       <h1>Abstandshalter</h1>
