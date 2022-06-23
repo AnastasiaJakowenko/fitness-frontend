@@ -9,23 +9,21 @@
    
     position: fixed;
     top:0; 
-    flex-direction: row;
-    justify-content: flex-end; 
+    justify-content: space-between;
     width: 100vw;
     }
-    .nav-link {
+
+    .home i {
       color: white;
+      font-size: 2rem;
     }
-    .nav-link .home{
-     justify-content: flex-start;
-     align-items: flex-start;
+
+    .rechts {
+      display: flex;
+      align-items: center;
     }
+
     .nav-link a {
       color: rgb(0, 0, 0);
-      margin-right: 0;
-   
-
-      /* flex-direction: row;
-      justify-content: flex-end; */
     }
   
