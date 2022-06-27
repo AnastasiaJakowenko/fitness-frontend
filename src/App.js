@@ -1,48 +1,28 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 // import axios from 'axios';
-import { Login } from "./pages/login.js";
-import { Home } from "./pages/home.js"
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-// import { NavLink, Routes, Route, Navigate } from "react-router-dom"
- const App = () => {
-  return (
-    <div className="App">
-      <Router>
-       
-          <Route path="/" component={Home} />
-          <Route path="/" render={() => <Home />} />
+import Navigation from "./components/Navigation.js";
+import About from "./components/About.js";
+import FitnessPlan from "./components/FitnessPlan.js";
+import Kurse from "./components/Kurse.js";
+import Footer from "./components/Footer.js";
+import {Login} from "./components/login.js";
+import {Register} from "./components/Register.js";
 
-          {/* <Route path="/" element={<Home/>} 
-        /> */}
-           <Route path="/login" component={Login} />
-          <Route path="/login" render={() => <Login />} />
-          
-          
-      
-      </Router>
-    </div>
+function App() {
+  return (
+      <div className="App">
+        <Navigation />
+        <About />
+        <FitnessPlan />
+        <Kurse />
+        <Footer />
+        {/* <Login/> */}
+         <Register/> 
+      </div>
 
   );
 }
 
- ReactDOM.render(<App />, document.getElementById('root'));
 export default App;
 
 //kommentar
-
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-
-// const Example = () => <p>Example Komponente</p>;
-
-// const App = () => {
-//   return (
-//     <Router>
-//       <Route path="/example" component={Example} />
-//       <Route path="/example" render={() => <Example />} />
-//     </Router>
-//   );
-// };
-
