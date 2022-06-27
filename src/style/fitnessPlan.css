@@ -1,4 +1,5 @@
 .fitness-h1 {
+<<<<<<< HEAD
 	text-align: center;
 	padding: 1rem;
 }
@@ -55,3 +56,68 @@
 
 button:active {
 }
+=======
+  text-align: center;
+  padding: 1rem;
+}
+
+.fitness-p {
+  margin: 1rem;
+}
+
+.fitness-h3 {
+  margin: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+  width: max-content;
+}
+
+.fitness-button {
+  align-items: center;
+  border-radius: 0.5rem;
+  font-size: x-large;
+  width: 177px;
+    height: 35px;
+    background: linear-gradient(180deg, #FF8966 17.07%, rgba(255, 137, 102, 0) 100%);
+    border-radius: 20px;
+}
+.fitness-div {
+  color: white;
+  font-size: 21px;
+  /* display: flex;*/
+  flex-direction: column;
+  align-items: center;
+  background: rgb(24, 29, 30);
+  background: linear-gradient(
+    127deg,
+    rgba(24, 29, 30, 1) 0%,
+    rgba(24, 29, 30, 0.7413165949973739) 100%
+  );
+}
+.fitness-button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fitness-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.fitness-button:hover {
+  background-color: orange;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.fa-calendar-day:before{
+  color:#FF8966
+}
+.fa-cubes:before {
+  color:#FF8966
+
+}
+.fa-calendar-alt:before, .fa-calendar-days:before {
+  color:#FF8966
+
+}
+>>>>>>> fitness-plan
