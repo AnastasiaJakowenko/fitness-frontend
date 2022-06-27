@@ -25,6 +25,7 @@ function App() {
           </div>
           </Switch> */}
       </div>
+
     </Router>
   );
 }
