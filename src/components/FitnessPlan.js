@@ -1,19 +1,12 @@
 import "../style/fitnessPlan.css";
-<<<<<<< HEAD
 import SlideShow from "./SlideShow"
-function FitnessPlan() {
-  return (
-      <div className="fitness-div">
-        <h1 className="fitness-h1">Fitness Plan</h1>
-        <SlideShow/>
-=======
 
 function FitnessPlan() {
   return (
     <>
       <div className="fitness-div">
         <h1 className="fitness-h1">Fitness Plan</h1>
->>>>>>> fitness-plan
+        <SlideShow/>
         <h3 className="fitness-h3"><i class="fa-solid fa-calendar-day"></i> 1 Monat</h3>
         <p className="fitness-p">Attack feet behind the couch destroy couch flop over give attitude hide when guests come over hopped</p>
         <h3 className="fitness-h3"><i class="fa-solid fa-cubes"></i> 3 Monate</h3>
@@ -24,10 +17,8 @@ function FitnessPlan() {
           <button className="fitness-button" ><a href="#">Register</a></button>
         </div>
       </div>
-<<<<<<< HEAD
-=======
+
     </>
->>>>>>> fitness-plan
   );
 }
 
