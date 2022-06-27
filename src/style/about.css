@@ -1,14 +1,14 @@
 .studio {
-    width: 100%;
+	width: 100%;
 }
 
 .about_h1 {
-    padding-top: 1rem;
-    text-align: center;
+	padding-top: 1rem;
+	text-align: center;
 }
 
 .about_p {
-    padding: 1rem;
-    text-align:justify;
-    text-align-last: center;
+	padding: 1rem;
+	text-align: justify;
+	text-align-last: center;
 }
