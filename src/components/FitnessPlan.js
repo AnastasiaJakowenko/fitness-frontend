@@ -14,7 +14,6 @@ function FitnessPlan() {
         <div className="fitness-button-div">
           <button className="fitness-button" ><a href="#">Register</a></button>
         </div>
-        <h1>hola</h1>
       </div>
     </>
   );

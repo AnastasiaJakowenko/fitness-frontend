@@ -18,9 +18,14 @@
   align-items: center;
   border-radius: 0.5rem;
   font-size: x-large;
+  width: 177px;
+    height: 35px;
+    background: linear-gradient(180deg, #FF8966 17.07%, rgba(255, 137, 102, 0) 100%);
+    border-radius: 20px;
 }
 .fitness-div {
   color: white;
+  font-size: 21px;
   /* display: flex;*/
   flex-direction: column;
   align-items: center;
@@ -38,7 +43,7 @@
 }
 .fitness-button a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .fitness-button:hover {
@@ -46,5 +51,14 @@
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-button:active {
+.fa-calendar-day:before{
+  color:#FF8966
+}
+.fa-cubes:before {
+  color:#FF8966
+
+}
+.fa-calendar-alt:before, .fa-calendar-days:before {
+  color:#FF8966
+
 }
