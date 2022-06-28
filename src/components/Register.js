@@ -26,12 +26,12 @@ export const Register = () => {
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <i className="fa-solid fa-lock icon"></i>
-            <Form.Control type="password" placeholder="Password:" />
+            <Form.Control type="password" placeholder="Passwort:" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <i className="fa-solid fa-triangle-exclamation icon"> </i>
-            <Form.Control type="password" placeholder="Password bestätigen:" />
+            <Form.Control type="password" placeholder="Passwort bestätigen:" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
