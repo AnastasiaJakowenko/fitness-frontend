@@ -21,17 +21,15 @@ export const Login = () => {
             <h1> Einloggen</h1>
             <Form action="http://localhost:4001/login" method="POST">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <i class="fa-regular fa-envelope"></i>
-                    < Form.Control name="email" type="email" ref={inputRef} placeholder="Email:" />
+                    <i class="fa-regular fa-envelope icon"></i>
+                    < Form.Control name="email" type="email" ref={inputRef} placeholder="   Email:" />
                     <Form.Text className="text-muted">
                     </Form.Text>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <i class="fa-solid fa-lock"></i> <Form.Control type="password" placeholder="Password:" name="password" ref={inputRef} />
+                    <i class="fa-solid fa-lock icon"></i> <Form.Control type="password" placeholder="   Password:" name="password" ref={inputRef} />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
+        
                 <div className="d-flex justify-content-center">
                     <Button type="submit" className="d-flex justify-content-center align-items-center" variant="primary" >
                         Login
