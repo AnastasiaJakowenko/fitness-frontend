@@ -11,33 +11,32 @@ export const Register = () => {
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <i className="fa-solid fa-user icon"> </i>
-            {/* hier before Vorname und weiter sind 3 Leereplätze, damit es nicht unter icon  liegt */}
-            <Form.Control type="text" placeholder="   Vorname:" /> 
+            <Form.Control type="text" placeholder="Vorname:" /> 
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <i className="fa-solid fa-user icon"></i>
-            <Form.Control type="text" placeholder="   Nachname:" />
+            <Form.Control type="text" placeholder="Nachname:" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <i className="fa-regular fa-envelope icon"></i>
-            <Form.Control type="email" placeholder="   Email:" />
+            <Form.Control type="email" placeholder="Email:" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <i className="fa-solid fa-lock icon"></i>
-            <Form.Control type="password" placeholder="   Password:" />
+            <Form.Control type="password" placeholder="Password:" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <i className="fa-solid fa-triangle-exclamation icon"> </i>
-            <Form.Control type="password" placeholder="   Password bestätigen:" />
+            <Form.Control type="password" placeholder="Password bestätigen:" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <i className="fa-solid fa-person icon"></i>
-            <Form.Control type="number" placeholder="   Alter:" />
+            <Form.Control type="number" placeholder="Alter:" />
           </Form.Group>
 
 
@@ -45,22 +44,22 @@ export const Register = () => {
           <h3 className="adresseH3"> Adresse:</h3>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <i className="fa-solid fa-road icon"></i>
-            <Form.Control type="text" placeholder="   Straße:" />
+            <Form.Control type="text" placeholder="Straße:" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <i className="fa-solid fa-house-chimney-user icon"></i>
-            <Form.Control type="text" placeholder="   Husnummer:" />
+            <Form.Control type="text" placeholder="Hausnummer:" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <i className="fa-solid fa-city icon"></i>
-            <Form.Control type="text" placeholder="   Stadt:" />
+            <Form.Control type="text" placeholder="Stadt:" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <i className="fa-solid fa-list-ol icon"></i>
-            <Form.Control type="number" placeholder="   PLZ:" />
+            <Form.Control type="number" placeholder="PLZ:" />
           </Form.Group>
 
 
