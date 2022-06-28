@@ -7,10 +7,10 @@ import { Login } from "../components/Login.js"
 export const HomePage = () => {
     return (
         <>
-            <Navigation />,
-            <About />,
-            <FitnessPlan />,
-            <Kurse />,
+            <Navigation />
+            <About />
+            <FitnessPlan />
+            <Kurse />
             <Footer />
             <Login />
         </>

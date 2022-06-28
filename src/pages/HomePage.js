@@ -7,10 +7,10 @@ import Footer from "../components/Footer.js";
 export const HomePage = () => {
     return (
         <>
-            <Navigation />,
-            <About />,
-            <FitnessPlan />,
-            <Kurse />,
+            <Navigation />
+            <About />
+            <FitnessPlan />
+            <Kurse />
             <Footer />
         </>
     );
