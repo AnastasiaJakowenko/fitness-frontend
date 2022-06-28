@@ -12,14 +12,6 @@ h1 {
 	text-align: center;
 }
 
-.form-control {
-	border-bottom: 2px solid black;
-	/* border: none; */
-	border-top: none;
-	border-right: none;
-	border-left: none;
-	background-color: rgba(244, 244, 244, 0.73);
-}
 
 .btn-primary {
 	width: 183px;
@@ -29,15 +21,16 @@ h1 {
 	font-size: x-large;
 }
 
-
 .form-control {
-    border-bottom: 2px solid black;
-    /* border: none; */
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    background-color: rgba(244, 244, 244, 0.73);
+	border-bottom: 2px solid black;
+	/* border: none; */
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-radius: none;
+	background-color: rgba(244, 244, 244, 0.73);
 }
+
 
 .btn-primary {
    
@@ -48,4 +41,11 @@ h1 {
     border-radius: 0.5rem;
     font-size: x-large;
    
+}
+
+.icon {
+    color: #C8C6C6;
+    position: relative;
+    bottom: -2rem;
+    
 }
