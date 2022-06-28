@@ -7,7 +7,7 @@
 		rgba(24, 29, 30, 0.7413165949973739) 100%
 	);
 
-	position: fixed;
+	position: sticky;
 	top: 0;
 	justify-content: space-between;
 	width: 100vw;
@@ -25,4 +25,10 @@
 
 .nav-link a {
 	color: rgb(0, 0, 0);
+}
+.nav-link {
+  color:white;
+}
+.nav-link :hover {
+  color:orange;
 }
