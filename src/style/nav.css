@@ -1,29 +1,28 @@
 .nav {
-    display: flex; 
-    background: rgb(24, 29, 30);
-    background: linear-gradient(
-      127deg,
-      rgba(24, 29, 30, 1) 0%,
-      rgba(24, 29, 30, 0.7413165949973739) 100%
-    );
-    z-index: 10;
-    position: fixed;
-    top:0; 
-    justify-content: space-between;
-    width: 100vw;
-    }
+	display: flex;
+	background: rgb(24, 29, 30);
+	background: linear-gradient(
+		127deg,
+		rgba(24, 29, 30, 1) 0%,
+		rgba(24, 29, 30, 0.7413165949973739) 100%
+	);
 
-    .home i {
-      color: white;
-      font-size: 2rem;
-    }
+	position: fixed;
+	top: 0;
+	justify-content: space-between;
+	width: 100vw;
+}
 
-    .rechts {
-      display: flex;
-      align-items: center;
-    }
+.home i {
+	color: white;
+	font-size: 2rem;
+}
 
-    .nav-link a {
-      color: rgb(0, 0, 0);
-    }
-  
+.rechts {
+	display: flex;
+	align-items: center;
+}
+
+.nav-link a {
+	color: rgb(0, 0, 0);
+}
