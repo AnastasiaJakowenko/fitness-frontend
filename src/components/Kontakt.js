@@ -1,11 +1,15 @@
-import "../style/kontakt.css"
+
+import "../style/kontakt.css";
+
 
 export const Kontakt = () => {
   return (
     <>
       <div className="kontaktcontainer">
-        <div className="kontakformular">
+
+        <div className="kontaktformular">
           <h1>Kontaktiere uns</h1>
+
           <form>
             <label>
               Name:
@@ -18,6 +22,7 @@ export const Kontakt = () => {
 
         <div className="kontaktdaten">
           <div>
+
             <h5>Rufen Sie uns an</h5>
 
             <p> Tel.: 030 / 123456</p>
@@ -42,8 +47,8 @@ export const Kontakt = () => {
         </div>
 
 
+
       </div>
     </>
   );
-}
-
+};
