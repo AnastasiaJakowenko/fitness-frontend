@@ -7,7 +7,8 @@ function Kurse() {
     <div className="kurse">
     <h1>Kurse</h1>
 
-      <Carousel>
+    <Carousel interval={null}>
+
         <Carousel.Item>
           <img
             className="d-flex w-70 h-70 mb-2"
@@ -40,7 +41,7 @@ function Kurse() {
         </Carousel.Item>
       </Carousel>
 
-      <Carousel>
+      <Carousel interval={null}>
         <Carousel.Item>
           <img
             className="d-flex w-70 h-70 mb-2"
@@ -73,7 +74,7 @@ function Kurse() {
         </Carousel.Item>
       </Carousel>
 
-      <Carousel>
+      <Carousel interval={null}>
         <Carousel.Item>
           <img
             className="d-flex w-70 h-70 mb-2"
