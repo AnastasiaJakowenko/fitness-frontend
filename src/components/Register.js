@@ -6,7 +6,7 @@ export const Register = () => {
     <>
       <div className="register-container">
 
-        <h1> Registrieren</h1>
+        <h1 className='h1_register'> Registrieren</h1>
         <h3>Persönliche Daten</h3>
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">

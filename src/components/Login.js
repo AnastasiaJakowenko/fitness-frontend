@@ -25,13 +25,13 @@ export const Login = () => {
                     <i className="fa-regular fa-envelope icon"></i>
 
                
-                    < Form.Control name="email" type="email" ref={inputRef} placeholder="   Email:" />
+                    < Form.Control name="email" type="email" ref={inputRef} placeholder="Email:" />
                     <Form.Text className="text-muted">
                     </Form.Text>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
 
-                    <i className="fa-solid fa-lock icon"></i> <Form.Control type="password" placeholder="   Password:" name="password" ref={inputRef} />
+                    <i className="fa-solid fa-lock icon"></i> <Form.Control type="password" placeholder="Password:" name="password" ref={inputRef} />
 
                    
 

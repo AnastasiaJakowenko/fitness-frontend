@@ -11,9 +11,13 @@
 
 h1 {
     text-align: center;
-    margin-bottom: 3rem;
-    
+ 
 }
+.h1_register {
+    margin-bottom: 3rem;
+
+}
+
 h3 {
     color: #66B6FF;
 }
