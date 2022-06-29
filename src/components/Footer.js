@@ -24,8 +24,6 @@ function Footer() {
 
       </div>
 
-      <h1>Abstandshalter</h1>
-      <h1>Abstandshalter</h1>
     </>
   );
 }
