@@ -1,18 +1,24 @@
 .kontaktcontainer {
-    display: flex;
-    flex-direction: column;
+
+  display: flex;
+  flex-direction: column;
 }
 
+.kontakformular {
+}
 .kontaktdaten {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    text-align: center;
-    color: white;
-    background: rgb(24, 29, 30);
-    background: linear-gradient(127deg,
-            rgba(24, 29, 30, 1) 0%,
-            rgba(24, 29, 30, 0.7413165949973739) 100%);
+  padding: 2rem;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background: rgb(24, 29, 30);
+  background: linear-gradient(
+    127deg,
+    rgba(24, 29, 30, 1) 0%,
+    rgba(24, 29, 30, 0.7413165949973739) 100%
+  );
 }
-
-.map {}
+div {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
