@@ -5,7 +5,7 @@ import Carousel from "react-bootstrap/Carousel";
 function Kurse() {
   return (
     <div className="kurse">
-    <h1>Kurse</h1>
+    <h1 >Kurse</h1>
 
     <Carousel interval={null}>
 
@@ -97,7 +97,7 @@ function Kurse() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-flex w-70 h-70 mb-2"
+            className="d-flex w-70 h-70"
             src={require("../img/carousel/zumba/zumba3.jpg")}
             alt="Third slide"
           />
