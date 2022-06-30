@@ -4,13 +4,16 @@
   flex-direction: column;
 }
 
-.kontakformular {
-}
 .kontaktdaten {
+  height: 80vh;
   padding: 2rem;
   width: 100%;
   color: #fff;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   background: rgb(24, 29, 30);
   background: linear-gradient(
     127deg,
@@ -18,7 +21,12 @@
     rgba(24, 29, 30, 0.7413165949973739) 100%
   );
 }
-div {
+.kontakdaten div {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.map {
+  height: 80vh;
+  width: 100vw;
 }

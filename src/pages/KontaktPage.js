@@ -1,12 +1,12 @@
 import Navigation from "../components/Navigation.js";
-import Impressum from "../components/Impressum.js";
+import Kontakt from "../components/Kontakt.js";
 import Footer from "../components/Footer.js";
 
-export const ImpressumPage = () => {
+export const KontaktPage = () => {
     return (
         <>
             <Navigation />
-            <Impressum />
+            <Kontakt />
             <Footer />
         </>
     );
