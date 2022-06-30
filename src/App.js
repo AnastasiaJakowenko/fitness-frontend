@@ -8,7 +8,8 @@ import { Login } from "./components/Login.js";
 import { Register } from "./components/Register.js"
 import { Impressum } from "./components/Impressum.js";
 import { Kontakt } from "./components/Kontakt.js";
-
+import UserPanel from "./components/UserPanel.jsx";
+import { useState } from "react";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/impressum" element={<Impressum />} />
         <Route path="/kontakt" element={<Kontakt />} />
-
+        <Route path="/userPanel" element={<UserPanel />} />
       </Routes>
 
     </>
