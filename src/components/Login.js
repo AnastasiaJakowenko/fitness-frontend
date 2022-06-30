@@ -1,19 +1,41 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import "../style/login.css";
-import { useRef } from "react";
-
+import { useRef, useState } from "react";
+import axios from 'axios';
 export const Login = () => {
-    // const [isLogin, setIsLogin] = useState([]);
     const inputRef = useRef();
-    // useEffect(() => {
-    //     const HandleLogin = async () => {
-    //         //new response
-    //         const response = await axios.post("http://localhost:4001/login", { inputRef });
-    //         setIsLogin(response.data);
-    //     };
-    //     HandleLogin();
-    // }, []);
+    // const [showPanel, setShowPanel] = useState(false);
+    // const [isAuth, setIsAuth] = useState(false);
+    // const [token, setToken] = useState('');
+
+
+    // const logoutHandler = async () => {
+    //     await axios.post("/logout")
+    //     setIsAuth(false);
+    //     setToken('');
+    // }
+
+
+
+    // const getUserPanel = async () => {
+    //     try {
+    //         const resp = await axios.get('/userPanel', {
+    //             headers: {
+    //                 Authorization: `Bearer ${token}`
+    //             }
+    //         }
+    //         );
+    //         if (resp.data.success) {
+    //             return resp.data;
+    //         } else {
+    //             return null;
+    //         }
+    //     } catch (error) {
+    //         console.debug(error);
+    //         return null;
+    //     }
+    // }
 
 
     return (
@@ -21,22 +43,14 @@ export const Login = () => {
             <h1> Einloggen</h1>
             <Form action="http://localhost:4001/login" method="POST">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-
                     <i className="fa-regular fa-envelope icon"></i>
-
-               
                     < Form.Control name="email" type="email" ref={inputRef} placeholder="Email:" />
                     <Form.Text className="text-muted">
                     </Form.Text>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-
                     <i className="fa-solid fa-lock icon"></i> <Form.Control type="password" placeholder="Password:" name="password" ref={inputRef} />
-
-                   
-
                 </Form.Group>
-        
                 <div className="d-flex justify-content-center">
                     <Button type="submit" className="d-flex justify-content-center align-items-center" variant="primary" >
                         Login
