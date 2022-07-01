@@ -4,10 +4,10 @@ import FitnessPlan from "../components/FitnessPlan.js";
 import Kurse from "../components/Kurse.js";
 import Footer from "../components/Footer.js";
 
-export const HomePage = () => {
+export const HomePage = ({ logoutHandler }) => {
     return (
         <>
-            <Navigation />
+            <Navigation logoutHandler={logoutHandler} />
             <About />
             <FitnessPlan />
             <Kurse />

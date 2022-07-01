@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/nav.css";
 import { NavLink } from "react-router-dom";
-function Navigation() {
+function Navigation({ logoutHandler }) {
   return (
     <>
       <ul className="nav">

@@ -2,10 +2,10 @@ import React from "react";
 import NaviUserPanel from "./NaviUserPanel.js";
 import "../style/user-panel.css";
 
-const UserPanel = () => {
+const UserPanel = ({ logoutHandler }) => {
     return (
         <>
-            <NaviUserPanel />
+            <NaviUserPanel logoutHandler={logoutHandler} />
             <div className="main">
                 <ul className="list-panel">
                     <li> <i className="fa-solid fa-user"></i> User</li>
