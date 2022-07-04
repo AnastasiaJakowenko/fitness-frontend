@@ -9,18 +9,13 @@
 }
 .bmi_h1 {
     padding: 1rem;
-    text-align: start;
-    border-bottom: 2px solid #DFDFE2;
-}
-.ergebnisse{
     text-align: center;
-    /* font-size: 1.5em;
-    font-weight: 100; */
+    border-bottom: 2px solid #DFDFE2;
 }
 .ergebnisse_container{
     
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .input_bmi{
@@ -32,8 +27,11 @@
     margin-top: 3rem;
     text-align: center;
 }
+
+/*um rahmen around input fenster aus zu schalten*/
 input {
     outline: 0;
+    font-size: 18px;
 }
 
 .bmi_button_container{
@@ -49,8 +47,27 @@ input {
     background-color: #1FA5FA;
     color: white;
     width: 10rem;
+    padding: 0.25rem;
+    font-size: 21px;
     /* position: fixed; */
 }
+
+/*hier  für bmi infp h1 und h2*/
 .ergebnisse{
-    margin-top: 5rem;
+    margin-top: -2rem;
+    text-align: center;
+}
+.ergebnisse_info{
+    padding: 1rem;
+    text-align: center;
+}
+/* text-align: justify =>text wird seiten breit. rechts und links */
+.recomendations{
+    text-align: justify;
+    padding: 1rem;
+    font-size: 21px;
+}
+.recomendations a{
+   text-decoration: none;
+ 
 }
