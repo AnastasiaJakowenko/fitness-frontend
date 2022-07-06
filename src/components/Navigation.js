@@ -1,29 +1,36 @@
 import React from "react";
-import "../style/nav.css";
-import { NavLink } from "react-router-dom";
+import "../style/navigation.css";
+import Burger from "../components/Burger.js";
+import Sidebar from "./Sidebar";
+
 function Navigation() {
   return (
     <>
-      <ul className="nav">
-        <li className="nav-item home">
-          <a className="nav-link active" href="/">
-            <i className="fa-solid fa-bars"></i>
+
+            <div className="nav">
+
+        <div className="home">
+          <a className="nav-link">
+           {/* <i className="fa-solid fa-bars"></i> */}
+           {/* <Burger /> */}
+           <Sidebar pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
           </a>
-        </li>
+        </div>
 
         <div className="rechts">
-          <li className="nav-item">
+          <div>
             <a className="nav-link" href="/register">
               Register
             </a>
-          </li>
-          <li className="nav-item">
+          </div>
+          <div>
             <a className="nav-link" href="/login">
               Login
             </a>
-          </li>
+          </div>
         </div>
-      </ul>
+      </div>
+      
 
       {/* <NavLink to="/">Home</NavLink>
       <NavLink to="/todo-app">Todo App</NavLink>
@@ -32,6 +39,8 @@ function Navigation() {
       <NavLink to="/datenschutz">Datenschutz</NavLink>
       <NavLink to="/extras">Extras</NavLink>
       <NavLink to="/postslist">Posts list</NavLink> */}
+
+      
     </>
   );
 }
