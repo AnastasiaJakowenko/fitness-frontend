@@ -12,16 +12,25 @@ const Bmi = () => {
     // [655,1 +(9,6 * Number(weight)) + (1,8*Number(height)) - (4,7 * Number(age))]
     // [Number(weight) / Number(age) / Number(height)] * 10000
     const handleBmi = () => {
-        let val = (
-            [Number(weight) / Number(age) / Number(height)] * 10000
-        ).toFixed(1);
+        // let frauenFormel =(655, 1 + (9, 6 * Number(weight)) + (1, 8 * Number(height)) - (4, 7 * Number(age)))).toFixed(1);
+        // let mannerFormel =
+
+
+        let val  ;
+            
+            
+        if (gender === male) {
+           val = mannerFormel 
+        }else{
+            val = frauenFormel
+        }
         setBmi(val);
         if (val < 18.5) {
             setRecomendations(
                 <div className="recomendations">
 
                     <p>Dein Körpergewicht in Kilogramm fällt in Relation zu deiner Größe als untergewichtig aus? Untergewicht kann neben zu geringer Nährstoffaufnahme noch weitere Ursachen haben. Kurzfristig kannst du auf eine ausreichende, gesunde Ernährung achten. Langfristig empfehlen wir, die Ärztin bzw. den Arzt deines Vertrauens aufzusuchen.</p>
-                    <p>Sie können sich bei unsere  <a href="/kontakt"> Dietologe</a> melden um eine Beratung zu bekommen. Richtige Ernährung uns Sport können gut auf die Situation beinflussen</p>
+                    <p>Sie können sich bei unsere <a href="/kontakt"> Dietologe</a> melden um eine Beratung zu bekommen. Richtige Ernährung uns Sport können gut auf die Situation beinflussen</p>
                 </div>)
             setbmiColor("#28b1de")
             setInfo("Untergewicht");
@@ -30,7 +39,7 @@ const Bmi = () => {
                 <div className="recomendations">
 
                     <p>Gratulation, du hast einiges richtig gemacht – der BMI Rechner zeigt dir ein super Ergebnis ! Achte darauf, dein Gewicht durch eine ausgewogene Ernährung und Bewegung in diesem Bereich zu halten.</p>
-                    <p>Hier kannst du für sich interessante  <a href="/kurse">Kurse</a> auswählen. Wir werden uns auf persönliches Treffen freuen!</p>
+                    <p>Hier kannst du für sich interessante <a href="/kurse">Kurse</a> auswählen. Wir werden uns auf persönliches Treffen freuen!</p>
                 </div>)
             setbmiColor("#25aa1e")
             setInfo("Normalgewicht");
@@ -56,7 +65,7 @@ const Bmi = () => {
     };
     return (
         <div className="container">
-            <h1 className="bmi_h1">BMI Calculator</h1>
+            <h1 className="bmi_h1">Kalorienrechner</h1>
 
             <div className="input_container1">
                 <input className="input_bmi"
@@ -73,12 +82,12 @@ const Bmi = () => {
             </div>
             <div className="input_container2">
                 <label>
-                <input className="input_radio" type="radio" value="Male" name="gender" /> 
-                <i class="fa-solid fa-person"></i>
+                    <input className="input_radio" type="radio" value="Male" name="gender" />
+                    <i class="fa-solid fa-person "></i>
                 </label>
                 <label>
-                <input className="input_radio" type="radio" value="Female" name="gender" />
-                <i class="fa-solid fa-person-dress"></i>
+                    <input className="input_radio" type="radio" value="Female" name="gender" />
+                    <i class="fa-solid fa-person-dress"></i>
                 </label>
 
                 <input className="input_bmi"
@@ -90,16 +99,25 @@ const Bmi = () => {
             <div className="bmi_button_container">
                 <button className="bmi_button" onClick={handleBmi}>Berechnen</button>
             </div>
-            <div>
-                <Bmi_diagramm />
+            <div className="animation">
+
             </div>
             <div className="ergebnisse_container" style={{ color: bmiColor }}>
 
-                <h1 className="ergebnisse">{bmi}</h1>
+                <h1 className="ergebnisse">Deine tägliche Kalorienbedarf ist {bmi} Kalorien pro Tag</h1>
                 {/* <h2 className="ergebnisse">{info}</h2> */}
             </div>
-            <h2 className="ergebnisse_info">{info}</h2>
-            <p> {recomendations}</p>
+            {/* <h2 className="ergebnisse_info">{info}</h2> */}
+            <h2>Welche Rolle spielt der Kalorienverbrauch beim Abnehmen?</h2>
+            <p> Eine große, denn der Grundumsatz macht 50 bis 70 Prozent des gesamten Energiebedarfs aus.
+
+                Wichtig dabei: Menschen mit einem hohen Muskelanteil haben einen höheren Grundumsatz, da Muskeln stoffwechselaktiv sind, sodass du im Ruhezustand (Sitzen oder Liegen) mehr Energie verbrauchst, je mehr Muskelmasse du hast.
+
+                Wer abnehmen möchte, sollte also versuchen, seinen Muskelanteil nach oben zu schrauben – zum Beispiel durch gezieltes Krafttraining.
+
+                Der Grundumsatz ist von den vier Faktoren Gewicht, Größe, Alter und Geschlecht abhängig und gilt als Energiemenge in 24 Stunden, auch als „Ruhe-Nüchtern-Umsatz“ bezeichnet.
+
+                Allerdings darf der Grundumsatz nicht mit deinem täglichen Kalorienbedarf verwechselt werden – das sind zwei Paar Schuhe.</p>
 
         </div>
     );
