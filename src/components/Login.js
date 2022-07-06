@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import "../style/login.css";
 import { useRef, useState } from "react";
 import axios from 'axios';
+
 export const Login = () => {
     const inputRef = useRef();
     // const [showPanel, setShowPanel] = useState(false);
@@ -41,7 +42,7 @@ export const Login = () => {
     return (
         <div className='loginContainer d-flex flex-column justify-content-center'>
             <h1> Einloggen</h1>
-            <Form action="http://localhost:4001/login" method="POST">
+            <Form action="http://localhost:4000/login" method="POST">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <i className="fa-regular fa-envelope icon"></i>
                     < Form.Control name="email" type="email" ref={inputRef} placeholder="Email:" />
