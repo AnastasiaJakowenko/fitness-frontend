@@ -7,7 +7,6 @@ import { HomePage } from "./pages/HomePage.js";
 import { Login } from "./components/Login.js";
 import { Register } from "./components/Register.js"
 import UserPanel from "./components/UserPanel.jsx";
-import { useState } from "react";
 import { ImpressumPage } from "./pages/ImpressumPage.js";
 import { KontaktPage } from "./pages/KontaktPage.js";
 import { UserSportgeraetePage } from "./pages/UserSportgeraetePage.js";
@@ -16,6 +15,9 @@ import { UserEinstellungenPage } from "./pages/UserEinstellungenPage.js";
 import { UserKalorienRechnerPage } from "./pages/UserKalorienRechnerPage.js";
 import { UserKursePage } from "./pages/UserKursePage.js";
 import { UserVertragInfosPage } from "./pages/UserVertragInfosPage.js";
+import { Impressum } from "./components/Impressum.js";
+import { Kontakt } from "./components/Kontakt.js";
+
 
 function App() {
   return (
@@ -36,7 +38,6 @@ function App() {
         <Route path="/userkalorienrechner" element={<UserKalorienRechnerPage />} />
         <Route path="/userkurse" element={<UserKursePage />} />
         <Route path="/uservertraginfos" element={<UserVertragInfosPage />} />
-
 
       </Routes>
 

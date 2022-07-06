@@ -27,26 +27,23 @@
 	color: rgb(0, 0, 0);
 }
 .nav-link {
-  color:white;
+	color: white;
 }
 .nav-link :hover {
-	color:#FF8966;
+	color: #ff8966;
 }
 
-.burgermenu{
+.burgermenu {
 	width: 50%;
-	background-color:#4e5253;
+	background-color: #4e5253;
 	border-radius: 1rem;
 	padding: 1rem;
-
 }
 .burgermenu p a {
 	text-decoration: none;
 	color: white;
-	
 }
 
 .burgermenu p a:hover {
-	color:#FF8966;
+	color: #ff8966;
 }
-
