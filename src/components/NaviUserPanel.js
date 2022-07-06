@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/nav.css";
+import "../style/navigation.css";
 import Cookies from 'js-cookie';
 import { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";

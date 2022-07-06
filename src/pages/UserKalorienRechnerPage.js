@@ -1,12 +1,12 @@
 import Navigation from "../components/Navigation.js";
-import UserKalorieRechner from "../components/UserKalorieRechner.js";
+import UserKalorienRechner from "../components/UserKalorienRechner.js";
 import Footer from "../components/Footer.js";
 
-export const UserKalorieRechnerPage = () => {
+export const UserKalorienRechnerPage = () => {
     return (
         <>
             <Navigation />
-            <UserKalorieRechner />
+            <UserKalorienRechner />
             <Footer />
         </>
     );

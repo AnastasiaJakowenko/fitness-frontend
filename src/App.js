@@ -13,7 +13,7 @@ import { KontaktPage } from "./pages/KontaktPage.js";
 import { UserSportgeraetePage } from "./pages/UserSportgeraetePage.js";
 import { UserBmiRechnerPage } from "./pages/UserBmiRechnerPage.js";
 import { UserEinstellungenPage } from "./pages/UserEinstellungenPage.js";
-import { UserKalorieRechnerPage } from "./pages/UserKalorieRechnerPage.js";
+import { UserKalorienRechnerPage } from "./pages/UserKalorienRechnerPage.js";
 import { UserKursePage } from "./pages/UserKursePage.js";
 import { UserVertragInfosPage } from "./pages/UserVertragInfosPage.js";
 
@@ -33,7 +33,7 @@ function App() {
         <Route path="/usersportgeraete" element={<UserSportgeraetePage />} />
         <Route path="/userbmirechner" element={<UserBmiRechnerPage />} />
         <Route path="/usereinstellungen" element={<UserEinstellungenPage />} />
-        <Route path="/userkalorierechner" element={<UserKalorieRechnerPage />} />
+        <Route path="/userkalorienrechner" element={<UserKalorienRechnerPage />} />
         <Route path="/userkurse" element={<UserKursePage />} />
         <Route path="/uservertraginfos" element={<UserVertragInfosPage />} />
 

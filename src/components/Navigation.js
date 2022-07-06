@@ -1,6 +1,5 @@
 import React from "react";
 import "../style/navigation.css";
-import Burger from "../components/Burger.js";
 import Sidebar from "./Sidebar";
 
 function Navigation() {
@@ -12,7 +11,6 @@ function Navigation() {
         <div className="home">
           <a className="nav-link">
            {/* <i className="fa-solid fa-bars"></i> */}
-           {/* <Burger /> */}
            <Sidebar pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
           </a>
         </div>
