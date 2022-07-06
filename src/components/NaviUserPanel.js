@@ -10,7 +10,7 @@ const NaviUserPanel = () => {
     const [isAuth, setIsAuth] = useState(false);
     const [token, setToken] = useState('');
 
-    const baseURL = "http://localhost:4001";
+    const baseURL = "http://localhost:4000";
     const axiosPublic = axios.create({
         baseURL: baseURL,
         withCredentials: true

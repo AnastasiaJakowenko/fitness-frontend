@@ -11,7 +11,7 @@ export const Register = () => {
 
         <h1 className='h1_register'> Registrieren</h1>
         <h3>Persönliche Daten</h3>
-        <Form action="http://localhost:4001/register" method="POST">
+        <Form action="http://localhost:4000/register" method="POST">
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <i className="fa-solid fa-user icon"> </i>
             <Form.Control type="text" placeholder="Vorname:" name="firstName" ref={inputRef} />
