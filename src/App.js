@@ -36,6 +36,7 @@ function App() {
         <Route path="/userkalorierechner" element={<UserKalorieRechnerPage />} />
         <Route path="/userkurse" element={<UserKursePage />} />
         <Route path="/uservertraginfos" element={<UserVertragInfosPage />} />
+
       </Routes>
 
     </>
