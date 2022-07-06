@@ -11,6 +11,10 @@ import { useState } from "react";
 import { ImpressumPage } from "./pages/ImpressumPage.js";
 import { KontaktPage } from "./pages/KontaktPage.js";
 
+import { Impressum } from "./components/Impressum.js";
+import { Kontakt } from "./components/Kontakt.js";
+import  Bmi  from "./components/Bmi.js"
+import Kalorienrechner from "./components/KalorienRechner.js"
 
 function App() {
   return (
@@ -25,6 +29,9 @@ function App() {
         <Route path="/impressum" element={<ImpressumPage />} />
         <Route path="/kontakt" element={<KontaktPage />} />
         <Route path="/userPanel" element={<UserPanel />} />
+
+        <Route path="/bmi" element={<Bmi />} />
+        <Route path="/kalorienrechner" element={<Kalorienrechner />} />
       </Routes>
 
     </>
