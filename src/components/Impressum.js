@@ -5,6 +5,7 @@ function Impressum() {
     <>
     <div className="impressum-container">
       <h1>IMPRESSUM</h1>
+
   <p>&nbsp;</p>
   <p>
     <span style={{ textDecoration: "underline" }}>Angaben gem. § 5 TMG:</span>
