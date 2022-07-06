@@ -1,4 +1,3 @@
-
 .footer {
     box-sizing: border-box;
     position: relative;
@@ -11,30 +10,26 @@
 .links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    
+    margin-top: 1rem;
+    
 }
 
-.icons {
+.footer .icons{
     display: flex;
-    font-size:2rem;
-    
-}
-
-.footer i {
-    padding: 1rem;
     color: #FFFFFF;
+    font-size: 2rem;
+    text-decoration: none;
 }
 
-.textlinks a {
-   color: white;
-   text-decoration: none;
-   padding: 1rem;
-    
+.textlinks {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .footer p {
     color: #F96A43;
     font-size: 0.7rem;
     text-align: center;
-    
 }

@@ -37,6 +37,7 @@ function App() {
         <Route path="/userkurse" element={<UserKursePage />} />
         <Route path="/uservertraginfos" element={<UserVertragInfosPage />} />
 
+
       </Routes>
 
     </>
