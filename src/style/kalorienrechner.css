@@ -84,13 +84,13 @@ label input {
     position: absolute;
 }
 
-i {
+ label i {
     cursor: pointer;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     font-size: 3rem;
     color: #DFDFE2;
-    ;
+    
     margin-top: 4rem;
     padding: 1REM;
     /* border: 2px solid rgb(27, 198, 158); */
@@ -103,15 +103,17 @@ i {
 /*versuch animation bauen*/
 .animation {
     margin-top: 6rem;
-    background-color: #DFDFE2;
+    /* background-color: #DFDFE2; */
+    background: linear-gradient(90deg, rgba(40,177,222,1) 0%, rgba(76,175,80,1) 50%, rgba(255,152,0,1) 100%);
     width: 100%;
     height: 3rem;
     clip-path: polygon(0% 20%, 83% 21%, 85% 0, 100% 50%, 85% 100%, 83% 80%, 0% 80%);
+   
 }
 
 /* text-align: justify =>text wird seiten breit. rechts und links */
 .info_container {
-    margin-top: 5rem;
+    margin-top: 2rem;
     text-align: justify;
     padding: 1rem;
     font-size: 21px;
@@ -125,4 +127,16 @@ i {
 }
 .h2kalorien{
     color: #4DB6AC;
+}
+
+.kalorienZiffern{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 6rem;
+    /* margin-top: -3rem;  */
+}
+.kalorienZiffern li{
+    margin-top: 1rem;
+    list-style: none;
 }

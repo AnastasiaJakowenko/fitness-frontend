@@ -17,7 +17,7 @@ const Bmi = () => {
         if (val < 18.5) {
             setRecomendations(
                 <div className="recomendations">
-                    
+
                     <p>Dein Körpergewicht in Kilogramm fällt in Relation zu deiner Größe als untergewichtig aus? Untergewicht kann neben zu geringer Nährstoffaufnahme noch weitere Ursachen haben. Kurzfristig kannst du auf eine ausreichende, gesunde Ernährung achten. Langfristig empfehlen wir, die Ärztin bzw. den Arzt deines Vertrauens aufzusuchen.</p>
                     <p>Sie können sich bei unsere  <a href="/kontakt"> Dietologe</a> melden um eine Beratung zu bekommen. Richtige Ernährung uns Sport können gut auf die Situation beinflussen</p>
                 </div>)
@@ -26,7 +26,7 @@ const Bmi = () => {
         } else if (val > 18.5 && val <= 24.9) {
             setRecomendations(
                 <div className="recomendations">
-                   
+
                     <p>Gratulation, du hast einiges richtig gemacht – der BMI Rechner zeigt dir ein super Ergebnis ! Achte darauf, dein Gewicht durch eine ausgewogene Ernährung und Bewegung in diesem Bereich zu halten.</p>
                     <p>Hier kannst du für sich interessante  <a href="/kurse">Kurse</a> auswählen. Wir werden uns auf persönliches Treffen freuen!</p>
                 </div>)
@@ -35,7 +35,7 @@ const Bmi = () => {
         } else if (val > 24.9 && val < 30) {
             setRecomendations(
                 <div className="recomendations">
-                   
+
                     <p>Grundsätzlich gilt: Übergewicht laut BMI Rechner ist nicht gleich Übergewicht und noch lange nicht gleichbedeutend mit ungesund. Auch sehr trainierte Menschen mit einem hohen Muskelanteil haben häufig einen hohen Body Mass Index, daher ist eine Körperfettanalyse in solchen Fällen aussagekräftiger. </p>
                     <p>Melde dich bei unsere <a href="/kontakt"> Fitnesstrainer</a>, um eine Beratung zu bekommen, oder schau dir unsere <a href="/kurse">Kurse</a> an. Wir werden uns auf persönliches Treffen freuen!</p>
                 </div>)
@@ -44,7 +44,7 @@ const Bmi = () => {
         } else {
             setRecomendations(
                 <div className="recomendations">
-                  
+
                     <p>Sollte dein Wert als adipös Adipositas eingestuft werden, raten wir dir, mit deiner Ärztin bzw. deinem Arzt oder einer Beraterin bzw. einem Berater im Ernährungsbereich zu sprechen. So kann die Art deines Übergewichtes (Fettleibigkeit, Präadipositas, Adipositas Grad i, Adipositas Grad ii oder Adipositas Grad iii) richtig analysiert werden. Ab einem weit erhöhten BMI ist es sehr wichtig für deine Gesundheit, dein Gewicht zu regeln – der Rechner kann dabei der erste Schritt für eine gesunde Zukunft sein.</p>
                     <p>Wir bieten auch die <a href="/kurse"> Kurse</a> für Anfänger an, damit du langsam und gesund ein neues und gesundes Leben mit G5 Team anfangen könntest. Unser Team wird dich von Anfang an unterstützen und motivieren.</p>
                 </div>)

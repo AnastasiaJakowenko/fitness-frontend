@@ -1,20 +1,23 @@
 import React, { useState } from "react";
 import "../style/kalorienrechner.css"
+import UserInfo from "./UserInfo.js";
 const Kalorien = () => {
     const [kalorienZahl, setkalorienZahl] = useState();
     const [height, setHeight] = useState();
     const [weight, setWeight] = useState();
     const [age, setAge] = useState()
     const [gender, setGender] = useState()
-    // const [info, setInfo] = useState()
+    const [info, setInfo] = useState()
+    const [info2, setInfo2] = useState()
+
     const handleChange = (e) => {
         setGender(e.target.value)
     }
 
     const handleKalorienZahl = () => {
 
-        let mannerFormel = (66,47 + (13,7 * Number(weight)) + (5 * Number(height)) - (6,8 * Number(age)))
-        let frauenFormel = (655,1 + (9,6 * Number(weight)) + (1,8 * Number(height)) - (4,7 * Number(age)))
+        let mannerFormel = (66.47 + (13.7 * Number(weight)) + (5 * Number(height)) - (6.8 * Number(age))).toFixed(0)
+        let frauenFormel = (655.1 + (9.6 * Number(weight)) + (1.8 * Number(height)) - (4.7 * Number(age))).toFixed(0)
        
         let val;
         if (gender === "Male") {
@@ -23,7 +26,8 @@ const Kalorien = () => {
             val = frauenFormel
         }
         setkalorienZahl(val);
-       
+       setInfo("Deine tägliche Kalorienbedarf ist ")
+       setInfo2("Kalorien pro Tag")
     };
     return (
         <div className="container">
@@ -65,11 +69,19 @@ const Kalorien = () => {
                 <button className="bmi_button" onClick={handleKalorienZahl}>Berechnen</button>
             </div>
             {/* hier unsere arrow */}
-            <div className="animation"></div>
-
+            <div className="animation">
+            </div>
+            <div>
+            <ul className="kalorienZiffern">
+                    <li>1000</li>
+                    <li>1500</li>
+                    <li>2000</li>
+                    <li>2500</li>
+                </ul>
+            </div>
             <div className="ergebnisse_container" >
 
-                <h1 className="ergebnisseK">Deine tägliche Kalorienbedarf ist {kalorienZahl} Kalorien pro Tag</h1>
+                <h1 className="ergebnisseK">{info}{kalorienZahl} {info2}</h1>
 
             </div>
             <div className="info_container">
@@ -83,7 +95,9 @@ const Kalorien = () => {
                     Der Grundumsatz ist von den vier Faktoren Gewicht, Größe, Alter und Geschlecht abhängig und gilt als Energiemenge in 24 Stunden, auch als „Ruhe-Nüchtern-Umsatz“ bezeichnet.
 
                     Allerdings darf der Grundumsatz nicht mit deinem täglichen Kalorienbedarf verwechselt werden – das sind zwei Paar Schuhe.</p>
+                    <p><a href="https://www.fitforfun.de/abnehmen/diaeten/grundumsatz-wie-funktioniert-abnehmen_aid_10400.html">Mehr lesen</a></p>
             </div>
+            <UserInfo/>
         </div>
     );
 };

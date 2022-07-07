@@ -1,0 +1,52 @@
+.user_container {
+    width: 100%;
+    height: 1011px;
+}
+
+.container_gelb {
+    background-color: #FFAB2D;
+    height: 400px;
+}
+
+.container_gelb h3 {
+    color: black;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.container_gelb i {
+    color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+.imgUser {
+    height: 13vh;
+    /*positionieren in der mitte. margin 0 auto hat nicht gecklappt*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.container_white {
+    background-color: #DFDFE2;
+    height: 400px;
+    padding: 1rem;
+}
+
+.container_white h2 {
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 2rem;
+}
+.textInfo{
+    margin-top: 3rem;
+}
+.info_gelb{
+    margin-top: 3rem;
+}
