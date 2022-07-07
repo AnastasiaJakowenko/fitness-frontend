@@ -1,13 +1,23 @@
 import "../style/userInfo.css"
 
 
+
 function UserInfo() {
+  
+
+
+function UserInfo() {
+
 
     return (
         <>
             <div className="user_container">
                 <div className="container_gelb">
+
+                  
+
                   <div className="bewegMich">
+
                     <img
                         className="imgUser"
                         src={require("../img/avataaars.png")}
@@ -17,7 +27,11 @@ function UserInfo() {
                     <h3>Max Mustermann</h3>
 
                     <a href="#"><i className="fa-solid fa-pen-to-square"></i></a>
+
+                   
+
                     </div>
+
                 </div>
                 <div className="container_white">
                     <h2>Informationen</h2>

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "../style/kalorienrechner.css"
 import UserInfo from "./UserInfo.js";
+
 import ChangeUserData from "./ChangeUserData.js"
+
 const Kalorien = () => {
     const [kalorienZahl, setkalorienZahl] = useState();
     const [height, setHeight] = useState();
@@ -99,7 +101,10 @@ const Kalorien = () => {
                     <p><a href="https://www.fitforfun.de/abnehmen/diaeten/grundumsatz-wie-funktioniert-abnehmen_aid_10400.html">Mehr lesen</a></p>
             </div>
             <UserInfo/>
+
+
             <ChangeUserData/>
+
         </div>
     );
 };
