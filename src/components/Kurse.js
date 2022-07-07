@@ -11,7 +11,7 @@ function Kurse() {
 
         <Carousel.Item>
           <img
-            className="d-flex w-70 h-70 mb-2"
+            className="d-flex w-70 h-70 mb-2 "
             src={require("../img/carousel/yoga/yoga1.jpg")}
             alt="First slide"
           />
@@ -21,7 +21,7 @@ function Kurse() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-flex w-70 h-70 mb-2"
+            className="d-flex w-70 h-70 mb-2 "
             src={require("../img/carousel/yoga/yoga2.jpg")}
             alt="Second slide"
           />
