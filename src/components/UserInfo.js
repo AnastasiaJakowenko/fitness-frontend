@@ -3,10 +3,6 @@ import "../style/userInfo.css"
 
 
 function UserInfo() {
-  
-
-
-function UserInfo() {
 
 
     return (
