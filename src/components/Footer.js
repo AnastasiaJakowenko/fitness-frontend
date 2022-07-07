@@ -6,17 +6,11 @@ function Footer() {
       <div className="footer">
 
         <div className="links">
-
-          {/* <div className="icons"> */}
-            <a className="icons" href="https://de-de.facebook.com/" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook-square"></i></a>
-            <a className="icons" href="https://www.instagram.com/?hl=de" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram-square"></i></a>
-            <a className="icons" href="https://www.youtube.com/" target="_blank" rel="noreferrer"><i className="fa-brands fa-youtube-square"></i></a>
-          {/* </div> */}
-
-          {/* <div className="textlinks"> */}
-            <a className="textlinks" href="/kontakt">Kontakt</a>
-            <a className="textlinks" href="/impressum">Impressum</a>
-          {/* </div> */}
+          <a className="icons" href="https://de-de.facebook.com/" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook-square"></i></a>
+          <a className="icons" href="https://www.instagram.com/?hl=de" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram-square"></i></a>
+          <a className="icons" href="https://www.youtube.com/" target="_blank" rel="noreferrer"><i className="fa-brands fa-youtube-square"></i></a>
+          <a className="textlinks" href="/kontakt">Kontakt</a>
+          <a className="textlinks" href="/impressum">Impressum</a>
 
         </div>
 
