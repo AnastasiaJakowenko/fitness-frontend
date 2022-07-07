@@ -1,43 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import "../style/login.css";
-import { useRef, useState } from "react";
-import axios from 'axios';
+import { useRef } from "react";
 
 export const Login = () => {
     const inputRef = useRef();
-    // const [showPanel, setShowPanel] = useState(false);
-    // const [isAuth, setIsAuth] = useState(false);
-    // const [token, setToken] = useState('');
-
-
-    // const logoutHandler = async () => {
-    //     await axios.post("/logout")
-    //     setIsAuth(false);
-    //     setToken('');
-    // }
-
-
-
-    // const getUserPanel = async () => {
-    //     try {
-    //         const resp = await axios.get('/userPanel', {
-    //             headers: {
-    //                 Authorization: `Bearer ${token}`
-    //             }
-    //         }
-    //         );
-    //         if (resp.data.success) {
-    //             return resp.data;
-    //         } else {
-    //             return null;
-    //         }
-    //     } catch (error) {
-    //         console.debug(error);
-    //         return null;
-    //     }
-    // }
-
 
     return (
         <div className='loginContainer d-flex flex-column justify-content-center'>

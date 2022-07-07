@@ -1,8 +1,10 @@
 import React from "react";
+
 import "../style/navigation.css";
+// import "../style/nav.css";
+
 import Cookies from 'js-cookie';
-import { useState, useEffect } from 'react';
-import { NavLink } from "react-router-dom";
+import { useState } from 'react';
 import axios from "axios";
 const NaviUserPanel = () => {
 
@@ -10,7 +12,7 @@ const NaviUserPanel = () => {
     const [isAuth, setIsAuth] = useState(false);
     const [token, setToken] = useState('');
 
-    const baseURL = "http://localhost:4001";
+    const baseURL = "http://localhost:4000";
     const axiosPublic = axios.create({
         baseURL: baseURL,
         withCredentials: true

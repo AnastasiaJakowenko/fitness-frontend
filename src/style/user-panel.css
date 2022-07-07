@@ -9,7 +9,7 @@
 .main {
 	width: 100vw;
 	height: 100vh;
-	background-color: #ffdd80;
+	background-color: #fff;
 }
 .list-panel {
 	display: flex;
@@ -26,4 +26,8 @@
 	padding: 1.5rem;
 	border-bottom: 3px solid black;
 	border-radius: 10px;
+}
+
+.list-panel i {
+	color: #66b6ff;
 }
