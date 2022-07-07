@@ -6,10 +6,18 @@ import { Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage.js";
 import { Login } from "./components/Login.js";
 import { Register } from "./components/Register.js"
+import UserPanel from "./components/UserPanel.jsx";
+import { ImpressumPage } from "./pages/ImpressumPage.js";
+import { KontaktPage } from "./pages/KontaktPage.js";
+import { UserSportgeraetePage } from "./pages/UserSportgeraetePage.js";
+import { UserBmiRechnerPage } from "./pages/UserBmiRechnerPage.js";
+import { UserEinstellungenPage } from "./pages/UserEinstellungenPage.js";
+import { UserKalorienRechnerPage } from "./pages/UserKalorienRechnerPage.js";
+import { UserKursePage } from "./pages/UserKursePage.js";
+import { UserVertragInfosPage } from "./pages/UserVertragInfosPage.js";
 import { Impressum } from "./components/Impressum.js";
 import { Kontakt } from "./components/Kontakt.js";
-import  Bmi  from "./components/Bmi.js"
-import Kalorienrechner from "./components/KalorienRechner.js"
+
 
 function App() {
   return (
@@ -21,10 +29,16 @@ function App() {
         <Route path="/kurse" element={<Kurse />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/impressum" element={<Impressum />} />
-        <Route path="/kontakt" element={<Kontakt />} />
-        <Route path="/bmi" element={<Bmi />} />
-        <Route path="/kalorienrechner" element={<Kalorienrechner />} />
+        <Route path="/impressum" element={<ImpressumPage />} />
+        <Route path="/kontakt" element={<KontaktPage />} />
+        <Route path="/userPanel" element={<UserPanel />} />
+        <Route path="/usersportgeraete" element={<UserSportgeraetePage />} />
+        <Route path="/userbmirechner" element={<UserBmiRechnerPage />} />
+        <Route path="/usereinstellungen" element={<UserEinstellungenPage />} />
+        <Route path="/userkalorienrechner" element={<UserKalorienRechnerPage />} />
+        <Route path="/userkurse" element={<UserKursePage />} />
+        <Route path="/uservertraginfos" element={<UserVertragInfosPage />} />
+
       </Routes>
 
     </>
@@ -34,4 +48,3 @@ function App() {
 
 export default App;
 
-//kommentar

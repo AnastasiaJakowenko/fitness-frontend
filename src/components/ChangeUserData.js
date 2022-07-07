@@ -1,20 +1,31 @@
+import "../style/ChangeUserData.css"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import '../style/register.css';
 import { useRef } from "react";
-export const Register = () => {
+function ChangeUserData() {
 
-  const inputRef = useRef();
-  return (
-    <>
-      <div className="register-container">
+    const inputRef = useRef();
+    return (
+        <>
+            <div className="edit_user_container">
+                <div className="container_Gelb">
+                  
+                    <img
+                        className="imgUser2"
+                        src={require("../img/avataaars.png")}
+                        alt=""
+                    ></img>
 
-        <h1 className='h1_register'> Registrieren</h1>
-        <h3>Persönliche Daten</h3>
-        <Form action="http://localhost:4000/register" method="POST">
+                    <h3>Max Mustermann</h3>
+
+                   
+                </div>
+                <div className="container_White">
+                    <h2>Daten bearbeiten</h2>
+                    <Form action="http://localhost:4001/register" method="POST">
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <i className="fa-solid fa-user icon"> </i>
-            <Form.Control type="text" placeholder="Vorname:" name="firstName" ref={inputRef} />
+            <Form.Control type="text" placeholder="Vorname:" action="http://localhost:4001/register" method="POST"/> 
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -28,7 +39,7 @@ export const Register = () => {
 
             <i className="fa-regular fa-envelope icon"></i>
 
-            <Form.Control type="email" placeholder="Email:" name="email" ref={inputRef} />
+            <Form.Control type="email" placeholder="Email:" name="email" ref={inputRef}/>
 
           </Form.Group>
 
@@ -45,20 +56,20 @@ export const Register = () => {
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <i className="fa-solid fa-person icon"></i>
-
-            <Form.Control type="number" placeholder="Alter:" name="age" ref={inputRef} />
+ 
+            <Form.Control type="number" placeholder="Alter:"name="age" ref={inputRef} />
 
           </Form.Group>
           <h3 className="adresseH3"> Adresse:</h3>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <i className="fa-solid fa-road icon"></i>
-            <Form.Control type="text" placeholder="Straße:" name="address.street" ref={inputRef} />
+            <Form.Control type="text" placeholder="Straße:" name="address.street" ref={inputRef}  />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
 
             <i className="fa-solid fa-house-chimney-user icon"></i>
-            <Form.Control type="text" placeholder="Hausnummer:" name="address.number" ref={inputRef} />
+            <Form.Control type="text" placeholder="Hausnummer:" name="address.number" ref={inputRef}  />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -71,17 +82,22 @@ export const Register = () => {
           <Form.Group className="mb-3" controlId="formBasicEmail">
 
             <i className="fa-solid fa-list-ol icon"></i>
-            <Form.Control type="number" placeholder="PLZ:" name="address.zip" ref={inputRef} />
+            <Form.Control type="number" placeholder="PLZ:" name="address.zip" ref={inputRef}  />
           </Form.Group>
 
+
           <Button variant="primary" type="submit">
-            Registrieren
+            Bestätigen
 
           </Button>
         </Form>
+                </div>
+            </div>
 
-      </div>
-    </>
-  );
+
+
+        </>
+    )
 }
 
+export default ChangeUserData;
