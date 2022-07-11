@@ -1,0 +1,15 @@
+.userKurse {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.userKurseIcons {
+  display: flex;
+}
+.userKurseIconsRechts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userKurse h1 {
+  text-align: center;
+}
