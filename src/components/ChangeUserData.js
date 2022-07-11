@@ -34,6 +34,10 @@ function ChangeUserData() {
             <Form.Control type="text" placeholder="Nachname:" name="lastName" ref={inputRef} />
 
           </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <i className="fa-solid fa-person icon"></i>
+ 
+            <Form.Control type="number" placeholder="Alter:"name="age" ref={inputRef} />
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
 
@@ -54,10 +58,6 @@ function ChangeUserData() {
             <Form.Control type="password" placeholder="Passwort bestätigen:" name="repassword" ref={inputRef} />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <i className="fa-solid fa-person icon"></i>
- 
-            <Form.Control type="number" placeholder="Alter:"name="age" ref={inputRef} />
 
           </Form.Group>
           <h3 className="adresseH3"> Adresse:</h3>
