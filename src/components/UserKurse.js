@@ -9,9 +9,24 @@ function UserKurse() {
                 <h1>Kurse</h1>
                 <div className="userKurseIcons">
                     <div className="userKurseIconsRechts">
-                        <i class="fa-regular fa-calendar-days"></i>
-                        <i class="fa-solid fa-circle-arrow-left"></i>
-                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <div>
+                            <a href="/calendar">
+                                <i className="fa-regular fa-calendar-days"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                            <i className="fa-solid fa-circle-arrow-left"></i>
+
+                        </div>
+                        <div>
+                            <i className="fa-solid fa-circle-arrow-right"></i>
+
+                        </div>
+                        <div>
+                            <p>Heute</p>
+
+                        </div>
                     </div>
                 </div>
             </div>

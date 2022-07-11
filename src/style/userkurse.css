@@ -1,15 +1,18 @@
 .userKurse {
-  display: flex;
-  /* justify-content: space-between; */
-}
-.userKurseIcons {
-  display: flex;
-}
-.userKurseIconsRechts {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
 }
 
-.userKurse h1 {
-  text-align: center;
+.userKurseIcons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.userKurseIconsRechts {
+  display: flex;
+  align-items: space-between;
+  background-color: gray;
+}
+
+.fa-regular fa-calendar-days {
+  border-radius: 1rem;
 }
