@@ -1,8 +1,8 @@
 import React from 'react';
-import '../style/calemder.css';
+import '../style/calendar.css';
 import {CalendarComponent} from '@syncfusion/ej2-react-calendars';
 
-function Calender() {
+function Calendar() {
   return (
     <div>
         <CalendarComponent></CalendarComponent>
@@ -10,4 +10,4 @@ function Calender() {
   )
 }
 
-export default Calender;
+export default Calendar;
