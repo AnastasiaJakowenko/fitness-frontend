@@ -10,9 +10,9 @@ import UserPanel from "./components/UserPanel.jsx";
 import { ImpressumPage } from "./pages/ImpressumPage.js";
 import { KontaktPage } from "./pages/KontaktPage.js";
 import { UserSportgeraetePage } from "./pages/UserSportgeraetePage.js";
-import  {UserBmiRechnerPage} from "./pages/UserBmiRechnerPage.js";
+import { UserBmiRechnerPage } from "./pages/UserBmiRechnerPage.js";
 import { UserEinstellungenPage } from "./pages/UserEinstellungenPage.js";
-import  {UserKalorienRechnerPage}  from "./pages/UserKalorienRechnerPage.js";
+import { UserKalorienRechnerPage } from "./pages/UserKalorienRechnerPage.js";
 import { UserKursePage } from "./pages/UserKursePage.js";
 import { UserVertragInfosPage } from "./pages/UserVertragInfosPage.js";
 import Calendar from "./components/Calendar.js";
@@ -27,16 +27,15 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/fitness-plan" element={<FitnessPlan />} />
-        <Route path="/kurse" element={<Kurse />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/impressum" element={<ImpressumPage />} />
         <Route path="/kontakt" element={<KontaktPage />} />
         <Route path="/userPanel" element={<UserPanel />} />
         <Route path="/usersportgeraete" element={<UserSportgeraetePage />} />
-        <Route path="/userbmirechner" element={<UserBmiRechnerPage/>} />
+        <Route path="/userbmirechner" element={<UserBmiRechnerPage />} />
         <Route path="/usereinstellungen" element={<UserEinstellungenPage />} />
-        <Route path="/userkalorienrechner" element={<UserKalorienRechnerPage/>} />
+        <Route path="/userkalorienrechner" element={<UserKalorienRechnerPage />} />
         <Route path="/userkurse" element={<UserKursePage />} />
         <Route path="/uservertraginfos" element={<UserVertragInfosPage />} />
         <Route path="/calendar" element={<Calendar />} />
