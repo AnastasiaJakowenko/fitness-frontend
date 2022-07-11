@@ -2,35 +2,35 @@ import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import "../style/sidebar.css";
 
-function props() {
+function Sidebar() {
   return (
-    <Menu>
+    <Menu className="menu-sidebar">
       <a className="menu-item" href="/">
-        Home
+        <i class="fa-solid fa-house"></i>
       </a>
       <a className="menu-item" href="/kurse">
-        Kurse
+        <i className="fa-solid fa-person-running"></i>
       </a>
       <a className="menu-item" href="/usersportgeraete">
-        Sportgeräte
+        <i className="fa-solid fa-dumbbell"></i>
       </a>
       <a className="menu-item" href="/userbmirechner">
-        BMI-Rechner
+        <i className="fa-solid fa-calculator"></i>
       </a>
       <a className="menu-item" href="/userkalorienrechner">
-        Kalorienrechner
+        <i class="fa-solid fa-burger"></i>
       </a>
       <a className="menu-item" href="/uservertraginfos">
-        Vertragsinformationen
+        <i class="fa-solid fa-file-contract"></i>
       </a>
       <a className="menu-item" href="/usereinstellungen">
-        Einstellungen
+        <i class="fa-solid fa-gear"></i>
       </a>
       <a className="menu-item" href="/userpanel">
-        User
+        <i className="fa-solid fa-user"></i>
       </a>
     </Menu>
   );
 }
 
-export default props;
+export default Sidebar;
