@@ -10,13 +10,12 @@ import UserPanel from "./components/UserPanel.jsx";
 import { ImpressumPage } from "./pages/ImpressumPage.js";
 import { KontaktPage } from "./pages/KontaktPage.js";
 import { UserSportgeraetePage } from "./pages/UserSportgeraetePage.js";
-import  Bmi  from "./components/Bmi.js";
+import  {UserBmiRechnerPage} from "./pages/UserBmiRechnerPage.js";
 import { UserEinstellungenPage } from "./pages/UserEinstellungenPage.js";
-import   Kalorien  from "./components/KalorienRechner.js";
+import  {UserKalorienRechnerPage}  from "./pages/UserKalorienRechnerPage.js";
 import { UserKursePage } from "./pages/UserKursePage.js";
 import { UserVertragInfosPage } from "./pages/UserVertragInfosPage.js";
-import { Impressum } from "./components/Impressum.js";
-import { Kontakt } from "./components/Kontakt.js";
+
 
 
 function App() {
@@ -33,9 +32,9 @@ function App() {
         <Route path="/kontakt" element={<KontaktPage />} />
         <Route path="/userPanel" element={<UserPanel />} />
         <Route path="/usersportgeraete" element={<UserSportgeraetePage />} />
-        <Route path="/bmirechner" element={<Bmi />} />
+        <Route path="/userbmirechner" element={<UserBmiRechnerPage/>} />
         <Route path="/usereinstellungen" element={<UserEinstellungenPage />} />
-        <Route path="/kalorienrechner" element={<Kalorien/>} />
+        <Route path="/userkalorienrechner" element={<UserKalorienRechnerPage/>} />
         <Route path="/userkurse" element={<UserKursePage />} />
         <Route path="/uservertraginfos" element={<UserVertragInfosPage />} />
 
