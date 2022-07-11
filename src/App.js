@@ -15,6 +15,8 @@ import { UserEinstellungenPage } from "./pages/UserEinstellungenPage.js";
 import  {UserKalorienRechnerPage}  from "./pages/UserKalorienRechnerPage.js";
 import { UserKursePage } from "./pages/UserKursePage.js";
 import { UserVertragInfosPage } from "./pages/UserVertragInfosPage.js";
+import Calendar from "./components/Calendar.js";
+
 
 
 
@@ -37,6 +39,8 @@ function App() {
         <Route path="/userkalorienrechner" element={<UserKalorienRechnerPage/>} />
         <Route path="/userkurse" element={<UserKursePage />} />
         <Route path="/uservertraginfos" element={<UserVertragInfosPage />} />
+        <Route path="/calendar" element={<Calendar />} />
+
 
       </Routes>
 
