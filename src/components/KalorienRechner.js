@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../style/kalorienrechner.css"
 import UserInfo from "./UserInfo.js";
-
+import Calender from "./Calender.js"
 import ChangeUserData from "./ChangeUserData.js"
 
 const Kalorien = () => {
@@ -104,7 +104,8 @@ const Kalorien = () => {
 
 
             <ChangeUserData/>
-
+            
+            <Calender/>
         </div>
     );
 };
