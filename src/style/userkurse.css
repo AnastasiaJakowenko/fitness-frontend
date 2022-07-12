@@ -4,7 +4,7 @@
 
 .userKurseNav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .userKurseNavRechts {
@@ -17,8 +17,18 @@
 }
 
 .userKurseNavRechts div {
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
+  margin: 1rem;
   background-color: gray;
   border-radius: 1rem;
+  height: max-content;
+}
+
+.userKurseNavRechts p {
+  margin-bottom: 0rem !important;
+}
+
+.userKurseHeading {
+  display: flex;
+  flex-direction: column;
 }

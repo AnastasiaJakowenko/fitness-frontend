@@ -1,7 +1,17 @@
 import React from "react";
 import "../style/userkurse.css";
+import { useState } from "react";
 
 function UserKurse() {
+    const [yoga, setYoga] = useState()
+
+    function Yoga() {
+        return (
+            <>
+                <p>test</p>
+            </>
+        )
+    }
     return (
         <>
 
@@ -24,6 +34,11 @@ function UserKurse() {
                             <i className="fa-solid fa-circle-arrow-right"></i>
                         </div>
                     </div>
+                </div>
+                <div className="userKurseHeading">
+                    <button onClick={openYoga}><h2>Yoga</h2></button>
+                    <h2>Zumba</h2>
+                    <h2>Selbstverteidigung</h2>
                 </div>
             </div>
 
