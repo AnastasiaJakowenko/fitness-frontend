@@ -13,12 +13,12 @@
   font-size: 2rem;
 }
 
-.fa-regular fa-calendar-days {
-}
+
 
 .userKurseNavRechts div {
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 1rem 1rem 1rem;
   background-color: gray;
   border-radius: 1rem;
+  height: max-content;
 }
