@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/userkurse.css";
 import { useState } from "react";
+import {Calendar1} from "./Calendar1.js"
 
 function UserKurse() {
     const [calendar, setCalendar] = useState(false)
@@ -34,9 +35,8 @@ function UserKurse() {
                 <div className="userKurseNav">
                     <div className="userKurseNavRechts">
                         <div>
-                            <a href="/calendar">
-                                <i className="fa-regular fa-calendar-days" onClick={() => zeigCalendar()} ></i>
-                            </a>
+                        {/* <button onClick={() => zeigCalendar()}><i className="fa-regular fa-calendar-days" ></i></button> */}
+                        <i className="fa-regular fa-calendar-days"onClick={() => zeigCalendar()} ></i>
                         </div>
                         <div>
                             <i className="fa-solid fa-circle-arrow-left"></i>
@@ -49,12 +49,16 @@ function UserKurse() {
                         </div>
                     </div>
                 </div>
+                 {calendar &&
+                 <>
+                 <Calendar1/>
+                 <button onClick={() => setCalendar(false)} >Fertig</button>
+                 </>}
                 <div className="userKurseHeading">
                     <button onClick={() => onButtonClickYoga()}><h3>Yoga</h3></button>
                     <button onClick={() => onButtonClickZumba()}><h3>Zumba</h3></button>
                     <button onClick={() => onButtonClickSelbstverteidigung()}><h3>Selbstverteidigung</h3></button>
                 </div>
-
                 {buttonClickedYoga &&
                     <>
                         <table>

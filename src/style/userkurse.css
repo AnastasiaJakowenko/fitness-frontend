@@ -30,10 +30,10 @@
 .userKurseHeading {
   display: flex;
   flex-direction: column;
+}
 
 
-
-table, th, td, caption {
+ table, th, td, caption {
   border: 1px solid #f96a43;
 }
 
