@@ -13,10 +13,9 @@
   font-size: 2rem;
 }
 
-.fa-regular fa-calendar-days {
-}
 
 .userKurseNavRechts div {
+
   padding: 1rem;
   margin: 1rem;
   background-color: gray;
@@ -31,4 +30,27 @@
 .userKurseHeading {
   display: flex;
   flex-direction: column;
+
+
+
+table, th, td, caption {
+  border: 1px solid #f96a43;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-width: thin 0 0 thin;
+  margin: 0 0 1em;
+  table-layout: auto;
+  max-width: 100%;
+}
+th, td {
+  font-weight: normal;
+  text-align: left;
+
+}
+th, caption {
+  background-color: #f1f3f4;
+  font-weight: 700;
 }

@@ -4,30 +4,23 @@ import { useState } from "react";
 
 function UserKurse() {
     const [calendar, setCalendar] = useState(false)
-
     const zeigCalendar = () => {
         setCalendar(true);
     }
 
     const [buttonClickedYoga, setButtonClickedYoga] = useState(false)
-
     const onButtonClickYoga = () => {
         setButtonClickedYoga(true);
         setButtonClickedZumba(false);
         setButtonClickedSelbstverteidigung(false)
-
     }
-
     const [buttonClickedZumba, setButtonClickedZumba] = useState(false)
-
     const onButtonClickZumba = () => {
         setButtonClickedZumba(true);
         setButtonClickedYoga(false);
         setButtonClickedSelbstverteidigung(false)
     }
-
     const [buttonClickedSelbstverteidigung, setButtonClickedSelbstverteidigung] = useState(false)
-
     const onButtonClickSelbstverteidigung = () => {
         setButtonClickedSelbstverteidigung(true);
         setButtonClickedZumba(false);
@@ -36,7 +29,6 @@ function UserKurse() {
 
     return (
         <>
-
             <div className="userKurse">
                 <h1>Hallo {"userName"}. Das sind deine Kurse</h1>
                 <div className="userKurseNav">
@@ -62,6 +54,7 @@ function UserKurse() {
                     <button onClick={() => onButtonClickZumba()}><h3>Zumba</h3></button>
                     <button onClick={() => onButtonClickSelbstverteidigung()}><h3>Selbstverteidigung</h3></button>
                 </div>
+
                 {buttonClickedYoga &&
                     <>
                         <table>
@@ -106,13 +99,11 @@ function UserKurse() {
 
 
                 }
+
                 {buttonClickedZumba && <h1>test Zumba</h1>}
                 {buttonClickedSelbstverteidigung && <h1>test Selbstverteidigung</h1>}
             </div>
-
         </>
     )
-
 }
-
 export default UserKurse;
