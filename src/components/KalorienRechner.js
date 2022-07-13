@@ -100,11 +100,7 @@ const KalorienRechner = () => {
                     <p><a href="https://www.fitforfun.de/abnehmen/diaeten/grundumsatz-wie-funktioniert-abnehmen_aid_10400.html">Mehr lesen</a></p>
             </div>
             <UserInfo/>
-
-
             <ChangeUserData/>
-            
-            {/* <Calender/>  */}
         </div>
     );
 };
