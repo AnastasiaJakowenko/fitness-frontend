@@ -28,14 +28,6 @@ function Navigation() {
           </div>
         </div>
       </div>
-
-      {/* <NavLink to="/">Home</NavLink>
-      <NavLink to="/todo-app">Todo App</NavLink>
-      <NavLink to="/kontakt">Kontakt</NavLink>
-      <NavLink to="/about">About</NavLink>
-      <NavLink to="/datenschutz">Datenschutz</NavLink>
-      <NavLink to="/extras">Extras</NavLink>
-      <NavLink to="/postslist">Posts list</NavLink> */}
     </>
   );
 }

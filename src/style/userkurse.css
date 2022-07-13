@@ -2,17 +2,23 @@
   text-align: center;
 }
 
-.userKurseIcons {
+.userKurseNav {
   display: flex;
   justify-content: flex-end;
 }
 
-.userKurseIconsRechts {
+.userKurseNavRechts {
   display: flex;
   align-items: space-between;
-  background-color: gray;
+  font-size: 2rem;
 }
 
 .fa-regular fa-calendar-days {
+}
+
+.userKurseNavRechts div {
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+  background-color: gray;
   border-radius: 1rem;
 }
