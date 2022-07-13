@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "../style/kalorienrechner.css"
 import UserInfo from "./UserInfo.js";
-import Calender from "./Calender.js"
 import ChangeUserData from "./ChangeUserData.js"
 
-const Kalorien = () => {
+const KalorienRechner = () => {
     const [kalorienZahl, setkalorienZahl] = useState();
     const [height, setHeight] = useState();
     const [weight, setWeight] = useState();
@@ -105,9 +104,9 @@ const Kalorien = () => {
 
             <ChangeUserData/>
             
-            <Calender/>
+            {/* <Calender/>  */}
         </div>
     );
 };
 
-export default Kalorien;
+export default KalorienRechner;

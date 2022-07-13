@@ -12,10 +12,10 @@ import { KontaktPage } from "./pages/KontaktPage.js";
 import { UserSportgeraetePage } from "./pages/UserSportgeraetePage.js";
 import  {UserBmiRechnerPage} from "./pages/UserBmiRechnerPage.js";
 import { UserEinstellungenPage } from "./pages/UserEinstellungenPage.js";
-import  {UserKalorienRechnerPage}  from "./pages/UserKalorienRechnerPage.js";
+import  {KalorienRechnerPage}  from "./pages/KalorienRechnerPage.js";
 import { UserKursePage } from "./pages/UserKursePage.js";
 import { UserVertragInfosPage } from "./pages/UserVertragInfosPage.js";
-import Calendar from "./components/Calendar.js";
+import {Calendar1} from "./components/Calendar1.js";
 
 
 
@@ -36,10 +36,10 @@ function App() {
         <Route path="/usersportgeraete" element={<UserSportgeraetePage />} />
         <Route path="/userbmirechner" element={<UserBmiRechnerPage/>} />
         <Route path="/usereinstellungen" element={<UserEinstellungenPage />} />
-        <Route path="/userkalorienrechner" element={<UserKalorienRechnerPage/>} />
+        <Route path="/kalorienrechner" element={<KalorienRechnerPage/>} />
         <Route path="/userkurse" element={<UserKursePage />} />
         <Route path="/uservertraginfos" element={<UserVertragInfosPage />} />
-        <Route path="/calendar" element={<Calendar />} />
+        <Route path="/userkurse" element={<Calendar1 />} />
 
 
       </Routes>
