@@ -7,6 +7,7 @@ function UserKurse() {
     const zeigCalendar = () => {
         setCalendar(true);
     }
+
     const [buttonClickedYoga, setButtonClickedYoga] = useState(false)
     const onButtonClickYoga = () => {
         setButtonClickedYoga(true);
@@ -25,6 +26,7 @@ function UserKurse() {
         setButtonClickedZumba(false);
         setButtonClickedYoga(false)
     }
+
     return (
         <>
             <div className="userKurse">
@@ -52,7 +54,52 @@ function UserKurse() {
                     <button onClick={() => onButtonClickZumba()}><h3>Zumba</h3></button>
                     <button onClick={() => onButtonClickSelbstverteidigung()}><h3>Selbstverteidigung</h3></button>
                 </div>
-                {buttonClickedYoga && <h1>test Yoga</h1>}
+
+                {buttonClickedYoga &&
+                    <>
+                        <table>
+                            <caption>
+                                Frei <br />
+                                Belegt
+                                <br />
+                                Gebucht
+                            </caption>
+                            <tr>
+                                <th>DATUM</th>
+                                <th>9 Uhr</th>
+                                <th>11 Uhr</th>
+                                <th>17 Uhr</th>
+                                <th>19 Uhr</th>
+                            </tr>
+                            <tr>
+                                <th>Yogakurs1</th>
+                                <th>
+                                    <button>{ }</button>
+                                </th>
+                                <th>
+                                    <button></button>
+                                </th>
+                                <th>
+                                    <button></button>
+                                </th>
+                                <th>
+                                    <button></button>
+                                </th>
+                            </tr>
+                            <h3>test</h3>
+                        </table>
+                    </>
+
+
+
+
+
+
+
+
+
+                }
+
                 {buttonClickedZumba && <h1>test Zumba</h1>}
                 {buttonClickedSelbstverteidigung && <h1>test Selbstverteidigung</h1>}
             </div>
