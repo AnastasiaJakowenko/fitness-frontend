@@ -33,7 +33,7 @@ function App() {
         <Route path="/kontakt" element={<KontaktPage />} />
         <Route path="/userPanel" element={<UserPanel />} />
         <Route path="/usersportgeraete" element={<UserSportgeraetePage />} />
-        <Route path="/userbmirechner" element={<UserBmiRechnerPage />} />
+        <Route path="/bmirechner" element={<UserBmiRechnerPage />} />
         <Route path="/usereinstellungen" element={<UserEinstellungenPage />} />
         <Route path="/kalorienrechner" element={<KalorienRechnerPage/>} />
         <Route path="/userkurse" element={<UserKursePage />} />
