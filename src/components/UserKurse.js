@@ -2,8 +2,21 @@ import React from "react";
 import "../style/userkurse.css";
 import { useState } from "react";
 import {Calendar1} from "./Calendar1.js"
+import {UserKurseTabellen} from "./UserKurseTabellen.js";
 
 function UserKurse() {
+
+/*     const dateSlots = [{
+        date: Wed Jul 13 2022,
+        courseSlots:{ 
+            yoga: [9, 11],
+            zumba: [17]
+        }
+    }] */
+
+ 
+    
+    const [date, setDate] = useState(new Date());
     const [calendar, setCalendar] = useState(false)
     const zeigCalendar = () => {
         setCalendar(true);
@@ -35,8 +48,7 @@ function UserKurse() {
                 <div className="userKurseNav">
                     <div className="userKurseNavRechts">
                         <div>
-                        {/* <button onClick={() => zeigCalendar()}><i className="fa-regular fa-calendar-days" ></i></button> */}
-                        <i className="fa-regular fa-calendar-days"onClick={() => zeigCalendar()} ></i>
+                        <i className="fa-regular fa-calendar-days" onClick={() => zeigCalendar()} ></i>
                         </div>
                         <div>
                             <i className="fa-solid fa-circle-arrow-left"></i>
@@ -51,7 +63,7 @@ function UserKurse() {
                 </div>
                  {calendar &&
                  <>
-                 <Calendar1/>
+                 <Calendar1 date={date} setDate ={setDate}/>
                  <button onClick={() => setCalendar(false)} >Fertig</button>
                  </>}
                 <div className="userKurseHeading">
@@ -60,48 +72,7 @@ function UserKurse() {
                     <button onClick={() => onButtonClickSelbstverteidigung()}><h3>Selbstverteidigung</h3></button>
                 </div>
                 {buttonClickedYoga &&
-                    <>
-                        <table>
-                            <caption>
-                                Frei <br />
-                                Belegt
-                                <br />
-                                Gebucht
-                            </caption>
-                            <tr>
-                                <th>DATUM</th>
-                                <th>9 Uhr</th>
-                                <th>11 Uhr</th>
-                                <th>17 Uhr</th>
-                                <th>19 Uhr</th>
-                            </tr>
-                            <tr>
-                                <th>Yogakurs1</th>
-                                <th>
-                                    <button>{ }</button>
-                                </th>
-                                <th>
-                                    <button></button>
-                                </th>
-                                <th>
-                                    <button></button>
-                                </th>
-                                <th>
-                                    <button></button>
-                                </th>
-                            </tr>
-                            <h3>test</h3>
-                        </table>
-                    </>
-
-
-
-
-
-
-
-
-
+                    <UserKurseTabellen date={date}/>
                 }
 
                 {buttonClickedZumba && <h1>test Zumba</h1>}
