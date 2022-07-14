@@ -10,10 +10,11 @@
 .userKurseNavRechts {
   display: flex;
   align-items: space-between;
-  font-size: 2rem;
 }
 
 .userKurseNavRechts div {
+
+  font-size: 0.5rem;
   padding: 1rem;
   margin: 1rem;
   background-color: gray;
