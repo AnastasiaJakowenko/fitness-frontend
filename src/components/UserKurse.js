@@ -6,6 +6,7 @@ import {UserKurseTabellen} from "./UserKurseTabellen.js";
 
 function UserKurse() {
 
+    // zum backend schicken
 /*     const dateSlots = [{
         date: Wed Jul 13 2022,
         courseSlots:{ 
@@ -72,7 +73,7 @@ function UserKurse() {
                     <button onClick={() => onButtonClickSelbstverteidigung()}><h3>Selbstverteidigung</h3></button>
                 </div>
                 {buttonClickedYoga &&
-                    <UserKurseTabellen date={date}/>
+                    <UserKurseTabellen date={date} />
                 }
 
                 {buttonClickedZumba && <h1>test Zumba</h1>}

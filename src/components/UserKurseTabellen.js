@@ -1,42 +1,19 @@
 import React from "react";
 import { useState } from "react";
-export function UserKurseTabellen(props) {
-  /*   const [color, setColor] = useState() */
-  /* setColor("#28b1de") */
-  /* const th = document.getElementsByClassName('th');
-th.addEventlistener('click',function onclick(){
-    th.style.backgroundColor = 'green'
-}) */
+import { Toggle } from "./UserKurseTabellenButton.js";
 
+export function UserKurseTabellen(props) {
   const [isActive, setIsActive] = useState(false);
   const [buttonText, setButtonText] = useState("Frei");
   const handleClick = () => {
-    // 👇️ toggle
     setIsActive((current) => !current);
-    setButtonText(
-    //   if(buttonText === "Frei"){
-    //   buttonText("Gebucht")
-    // }
-    // else {
-    //   "Frei"
-    // }
-      )
-
-      
-    // 👇️ or set to true
-    // setIsActive(true);
+    setButtonText();
   };
 
   return (
     <>
       <table>
-        <caption>
-          Frei background
-          <br />
-          Belegt rot
-          <br />
-          Gebucht grün
-        </caption>
+
         <tr>
           <th>{props.date.toDateString()}</th>
           <th>9 Uhr</th>
@@ -45,28 +22,39 @@ th.addEventlistener('click',function onclick(){
           <th>19 Uhr</th>
         </tr>
         <tr>
-          <th>Yogakurs1</th>
-          <th
-            style={{
-              backgroundColor: isActive ? "green" : "",
-              color: isActive ? "white" : "",
-            }}
-            onClick={handleClick}
-          >{buttonText}
-            
+          <th>Yogakurs</th>
+          <th>
+            <Toggle />
           </th>
           <th>
-            <button></button>
+            <Toggle />
           </th>
           <th>
-            <button></button>
+            <Toggle />
           </th>
           <th>
-            <button></button>
+            <Toggle />
           </th>
         </tr>
-        {/* <p>lorem ipsum dolor sit amet, consectetur adipis</p> */}
+        
       </table>
+      <p>lorem ipsum dolor sit amet, consectetur adipis</p>
+
+
+
     </>
   );
 }
+
+/*   const [color, setColor] = useState() */
+/* setColor("#28b1de") */
+/* const th = document.getElementsByClassName('th');
+th.addEventlistener('click',function onclick(){
+    th.style.backgroundColor = 'green'
+}) */
+
+// style={{
+//   backgroundColor: isActive ? "green" : "",
+//   color: isActive ? "white" : "",
+// }}
+// onClick={handleClick}
