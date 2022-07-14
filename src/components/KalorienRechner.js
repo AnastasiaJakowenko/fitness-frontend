@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../style/kalorienrechner.css"
-import UserInfo from "./UserInfo.js";
-import ChangeUserData from "./ChangeUserData.js"
+
 
 const KalorienRechner = () => {
     const [kalorienZahl, setkalorienZahl] = useState();
@@ -99,8 +98,7 @@ const KalorienRechner = () => {
                     Allerdings darf der Grundumsatz nicht mit deinem täglichen Kalorienbedarf verwechselt werden – das sind zwei Paar Schuhe.</p>
                     <p><a href="https://www.fitforfun.de/abnehmen/diaeten/grundumsatz-wie-funktioniert-abnehmen_aid_10400.html">Mehr lesen</a></p>
             </div>
-            <UserInfo/>
-            <ChangeUserData/>
+        
         </div>
     );
 };

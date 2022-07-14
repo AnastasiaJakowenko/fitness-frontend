@@ -6,6 +6,7 @@ import {UserKurseTabellen} from "./UserKurseTabellen.js";
 
 function UserKurse() {
 
+
     // zum backend schicken
 /*     const dateSlots = [{
         date: Wed Jul 13 2022,

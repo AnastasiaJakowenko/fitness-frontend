@@ -14,10 +14,10 @@ function Sidebar() {
       <a className="menu-item" href="/usersportgeraete">
         <i className="fa-solid fa-dumbbell"></i>
       </a>
-      <a className="menu-item" href="/userbmirechner">
+      <a className="menu-item" href="/bmirechner">
         <i className="fa-solid fa-calculator"></i>
       </a>
-      <a className="menu-item" href="/userkalorienrechner">
+      <a className="menu-item" href="/kalorienrechner">
         <i className="fa-solid fa-burger"></i>
       </a>
       <a className="menu-item" href="/uservertraginfos">
