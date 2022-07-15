@@ -1,6 +1,6 @@
 .container {
-    /* background-color:#EFEFEF; */
-    height: 100vh;
+    /* damit footer auch nach add info(wie in bmi rechner, wir laden info nach drücken auf berechen button)auch responsive wird und am ende der seite bleibt */
+    height: max-content; 
 }
 
 .input_container1 {
