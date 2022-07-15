@@ -2,15 +2,17 @@ import "../style/about.css";
 
 function About() {
   return (
+
     <div className="about_container">
-      <div className="img_container">
+   
+      <div>
       <img
         className="studio"
         src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt=""
       ></img>
       </div>
-
-      <div className="text_container">
+      
+      <div>
         <h1 className="about_h1">Fitnessstudio G5</h1>
         <p className="about_p">
           Gib alles für Fitness und Gesundheit. Aber nicht irgendwo. Sondern da,
