@@ -12,3 +12,19 @@
 	text-align: justify;
 	text-align-last: center;
 }
+@media only screen and (min-width: 600px) {
+	.about_container {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.studio {
+		padding: 1rem;
+		height: 310px;
+		width: 50vw;
+	}
+	.about_p{
+		width: 50vw;
+	}
+
+}
