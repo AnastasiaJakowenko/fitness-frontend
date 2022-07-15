@@ -2,7 +2,9 @@ import "../style/about.css";
 
 function About() {
   return (
-    <>
+
+    <div className="about_container">
+   
       <div>
       <img
         className="studio"
@@ -21,7 +23,7 @@ function About() {
           Magdeburg fit – und gerne auch dich!
         </p>
       </div>
-    </>
+    </div>
   );
 }
 
