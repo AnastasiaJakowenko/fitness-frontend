@@ -81,5 +81,8 @@
   .fitness_text_container{
     width: 50vw;
   }
+  .fitness-div{
+    margin-top: 6rem;
+  }
 
 }
