@@ -1,24 +1,21 @@
-import { useState } from 'react';
+
 import Calendar from 'react-calendar';
 import '../style/calendar.css';
 
-export const Calendar1 =()=> {
-  const [date, setDate] = useState(new Date());
+export const Calendar1 =(props)=> {
 
   return (
     <>
     <div className='app'>
       <h1 className='text-center'>React Calendar</h1>
       <div className='calendar-container'>
-        <Calendar onChange={setDate} value={date} />
+        <Calendar onChange={props.setDate} value={props.date} />
       </div>
       <p className='text-center'>
         <span className='bold'>Selected Date:</span>{' '}
-        {date.toDateString()}
+        {props.date.toDateString()}
       </p>
     </div>
     </>
   );
 }
-
-// export default Calendar;

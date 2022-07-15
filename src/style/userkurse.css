@@ -10,17 +10,17 @@
 .userKurseNavRechts {
   display: flex;
   align-items: space-between;
-  font-size: 2rem;
 }
-
 
 .userKurseNavRechts div {
 
+  font-size: 0.5rem;
   padding: 1rem;
   margin: 1rem;
   background-color: gray;
   border-radius: 1rem;
   height: max-content;
+  cursor: pointer;
 }
 
 .userKurseNavRechts p {
@@ -33,6 +33,9 @@
 }
 
 
+
+/* Tabelle Buchungen für jeden Kurs*/
+
  table, th, td, caption {
   border: 1px solid #f96a43;
 }
@@ -42,15 +45,17 @@ table {
   border-spacing: 0;
   border-width: thin 0 0 thin;
   margin: 0 0 1em;
-  table-layout: auto;
+  table-layout:fixed;
   max-width: 100%;
 }
+
 th, td {
   font-weight: normal;
   text-align: left;
-
 }
+
 th, caption {
   background-color: #f1f3f4;
   font-weight: 700;
 }
+

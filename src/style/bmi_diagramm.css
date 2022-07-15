@@ -29,6 +29,7 @@
     width: 350px;
     height: 175px;
     overflow: hidden;
+    z-index: -10;
   }
   
   .chart-skills::before,
