@@ -8,7 +8,7 @@ export const Register = () => {
   return (
     <>
       <div className="register-container">
-
+          <div className='probe'>
         <h1 className='h1_register'> Registrieren</h1>
         <h3>Persönliche Daten</h3>
         <Form action="http://localhost:4000/register" method="POST">
@@ -79,7 +79,7 @@ export const Register = () => {
 
           </Button>
         </Form>
-
+        </div>
       </div>
     </>
   );
