@@ -1,23 +1,23 @@
 import React from "react";
 import "../style/userkurse.css";
 import { useState } from "react";
-import {Calendar1} from "./Calendar1.js"
-import {UserKurseTabellen} from "./UserKurseTabellen.js";
+import { Calendar1 } from "./Calendar1.js"
+import { UserKurseTabellen } from "./UserKurseTabellen.js";
 
 function UserKurse() {
 
 
     // zum backend schicken
-/*     const dateSlots = [{
-        date: Wed Jul 13 2022,
-        courseSlots:{ 
-            yoga: [9, 11],
-            zumba: [17]
-        }
-    }] */
+    /*     const dateSlots = [{
+            date: Wed Jul 13 2022,
+            courseSlots:{ 
+                yoga: [9, 11],
+                zumba: [17]
+            }
+        }] */
 
- 
-    
+
+
     const [date, setDate] = useState(new Date());
     const [calendar, setCalendar] = useState(false)
     const zeigCalendar = () => {
@@ -50,7 +50,7 @@ function UserKurse() {
                 <div className="userKurseNav">
                     <div className="userKurseNavRechts">
                         <div>
-                        <i className="fa-regular fa-calendar-days" onClick={() => zeigCalendar()} ></i>
+                            <i className="fa-regular fa-calendar-days" onClick={() => zeigCalendar()} ></i>
                         </div>
                         <div>
                             <i className="fa-solid fa-circle-arrow-left"></i>
@@ -63,22 +63,28 @@ function UserKurse() {
                         </div>
                     </div>
                 </div>
-                 {calendar &&
-                 <>
-                 <Calendar1 date={date} setDate ={setDate}/>
-                 <button onClick={() => setCalendar(false)} >Fertig</button>
-                 </>}
+                {calendar &&
+                    <>
+                        <Calendar1 date={date} setDate={setDate} />
+                        <button onClick={() => setCalendar(false)} >Fertig</button>
+                    </>}
+
                 <div className="userKurseHeading">
                     <button onClick={() => onButtonClickYoga()}><h3>Yoga</h3></button>
                     <button onClick={() => onButtonClickZumba()}><h3>Zumba</h3></button>
                     <button onClick={() => onButtonClickSelbstverteidigung()}><h3>Selbstverteidigung</h3></button>
                 </div>
+
                 {buttonClickedYoga &&
-                    <UserKurseTabellen date={date} />
+                    (<UserKurseTabellen date={date} kurs={"Yoga"} />)
                 }
 
-                {buttonClickedZumba && <h1>test Zumba</h1>}
-                {buttonClickedSelbstverteidigung && <h1>test Selbstverteidigung</h1>}
+                {buttonClickedZumba && (<UserKurseTabellen date={date} kurs={"Zumba"} />)}
+
+
+                {buttonClickedSelbstverteidigung && (<UserKurseTabellen date={date} kurs={"Selbstverteidigung"} />)}
+
+
             </div>
         </>
     )
