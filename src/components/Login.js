@@ -7,7 +7,9 @@ export const Login = () => {
     const inputRef = useRef();
 
     return (
+
         <div className='loginContainer d-flex flex-column justify-content-center'>
+
             <h1> Einloggen</h1>
             <Form action="http://localhost:4000/login" method="POST">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -25,7 +27,9 @@ export const Login = () => {
                     </Button>
                 </div>
             </Form>
+
         </div>
+
     )
 
 }
