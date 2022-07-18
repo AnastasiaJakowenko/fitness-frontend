@@ -35,6 +35,7 @@
     }
     .carousel-item img {
         width: 30vw;
+        margin: 1.25rem;
     }
 .kurse{
     margin-top: 2rem;
