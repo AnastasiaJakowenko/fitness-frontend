@@ -4,7 +4,7 @@ import FitnessPlan from "./components/FitnessPlan.js";
 import Kurse from "./components/Kurse.js";
 import { Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage.js";
-import { Login } from "./components/Login.js";
+import { LoginPage } from "./pages/LoginPage.js";
 import { RegisterPage } from "./pages/RegisterPage.js"
 import UserPanel from "./components/UserPanel.jsx";
 import { ImpressumPage } from "./pages/ImpressumPage.js";
@@ -27,7 +27,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/fitness-plan" element={<FitnessPlan />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/impressum" element={<ImpressumPage />} />
         <Route path="/kontakt" element={<KontaktPage />} />
