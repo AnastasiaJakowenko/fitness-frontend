@@ -1,53 +1,49 @@
-
 .register-container {
+	padding: 2rem;
+	position: absolute;
+	width: 100%;
 
-    padding: 2rem;
-    position: absolute;
-    width: 100%;
-    
-    background-color: #F4F4F4;
-
+	background-color: #f4f4f4;
 }
 
 h1 {
-    text-align: center;
- 
+	text-align: center;
 }
 .h1_register {
-    margin-bottom: 3rem;
-
+	margin-bottom: 3rem;
 }
 
 .register-container h3 {
-    color: #66B6FF;
+	color: #66b6ff;
 }
-.adresseH3{
-    margin-top: 4rem;
+.adresseH3 {
+	margin-top: 4rem;
 }
 .form-control {
-    border-bottom: 2px solid black;
-    padding-left: 2rem ; /*damit der tex vom imputfeld nicht so nah zu icon steht*/
-    background-color: #F4F4F4;
-    
+	border-bottom: 2px solid black;
+	padding-left: 2rem; /*damit der tex vom imputfeld nicht so nah zu icon steht*/
+	background-color: #f4f4f4;
 }
 
 .btn-primary {
-   
-    width: 183px;
-    height: 41px;
-    background: #66B6FF;
-    border-radius: 0.5rem;
-    font-size: x-large;
-    margin: 0 auto;
-    display: flex; /* text von button in der miete */
-    justify-content: center;
-    margin-top: 4rem;
-   
+	width: 183px;
+	height: 41px;
+	background: #66b6ff;
+	border-radius: 0.5rem;
+	font-size: x-large;
+	margin: 0 auto;
+	display: flex; /* text von button in der miete */
+	justify-content: center;
+	margin-top: 4rem;
 }
 
 .icon {
-    color: #C8C6C6;
-    position: relative;/* um icons zu positionieren*/
-    bottom: -2rem;
-    
+	color: #c8c6c6;
+	position: relative; /* um icons zu positionieren*/
+	bottom: -2rem;
+}
+
+.p-alert {
+	color: tomato;
+	font-weight: bold;
 }

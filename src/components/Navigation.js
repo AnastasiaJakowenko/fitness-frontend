@@ -7,13 +7,10 @@ function Navigation() {
     <>
       <div className="nav">
         <div className="home">
-          <a className="nav-link">
-            {/* <i className="fa-solid fa-bars"></i> */}
-            <Sidebar
-              pageWrapId={"page-wrap"}
-              outerContainerId={"outer-container"}
-            />
-          </a>
+          <Sidebar
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+          />
         </div>
         <div className="rechts">
           <div>
