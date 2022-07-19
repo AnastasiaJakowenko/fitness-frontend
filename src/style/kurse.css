@@ -27,3 +27,17 @@
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (min-width: 600px) {
+	.kurse_container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .carousel-item img {
+        width: 30vw;
+        margin: 1.25rem;
+    }
+.kurse{
+    margin-top: 2rem;
+}
+}

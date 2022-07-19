@@ -67,3 +67,9 @@ animation:animation-about__img--slideshow3 ease-in-out 15s infinite ;
     
 
 }
+
+@media only screen and (min-width: 600px) {
+.about__img{
+    height: 29rem;
+}
+}

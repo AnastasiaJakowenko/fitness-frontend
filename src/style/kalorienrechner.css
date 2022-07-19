@@ -140,3 +140,28 @@ label input {
     margin-top: 1rem;
     list-style: none;
 }
+
+
+@media only screen and (min-width: 600px) {
+    
+	.input_container2 {
+        margin-left: -3.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly; 
+         }
+}
+
+@media only screen and (min-width: 300px){
+.weight{
+    margin-left:4.5rem;
+}
+}
+@media only screen and (min-width: 420px){
+    .weight{
+        margin-left:7rem;
+    }
+    }
+
+
+

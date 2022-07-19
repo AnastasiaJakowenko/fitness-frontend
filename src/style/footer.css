@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-
+flex-direction: row;
   margin-top: 1rem;
 }
 
@@ -25,6 +25,7 @@
   color: #ffffff;
   font-size: 2rem;
   text-decoration: none;
+  padding-left: 2rem;
 }
 
 .footer .icons:hover {
@@ -34,9 +35,10 @@
 .textlinks {
   color: #ffffff;
   text-decoration: none;
+  padding-left: 1rem;
 }
 
-.textlinks:hover {
+ .textlinks:hover {
   color: #f96a43;
 }
 
@@ -44,4 +46,40 @@
   color: #f96a43;
   font-size: 0.7rem;
   text-align: center;
+  margin-top: 0.5rem;
 }
+
+.footer_icons{
+  display: flex;
+  justify-content: left;
+}
+.footer_textlinks{
+  display: flex;
+  justify-content: right;
+} 
+
+@media only screen and (min-width: 600px) {
+	.footer_icons{
+    display: flex;
+    justify-content: left;
+  }
+  .footer_textlinks{
+    display: flex;
+    justify-content: right;
+  } 
+  .footer .icons {
+    padding-right:1rem;
+  }
+  .footer_textlinks a{
+    padding-left:6rem;
+  }
+
+  /*hier machen verteilen wir unsere icons links und textlinks in divs damit wir diese in vershiedene seiten lassen könnten.icons links links und textlinks rechts. mit padding machen abstand zwishen elemente*/
+  
+   .footer_icons a {
+    padding-right:4rem;
+  }
+  .footer_textlinks a{
+    padding-left:6rem;
+  }
+}  

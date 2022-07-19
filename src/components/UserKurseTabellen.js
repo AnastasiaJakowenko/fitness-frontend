@@ -3,40 +3,36 @@ import { useState } from "react";
 import { Toggle } from "./UserKurseTabellenButton.js";
 
 export function UserKurseTabellen(props) {
-  const [isActive, setIsActive] = useState(false);
-  const [buttonText, setButtonText] = useState("Frei");
+  // const [isActive, setIsActive] = useState(false);
+  // const [buttonText, setButtonText] = useState("Frei");
   const handleClick = () => {
-    setIsActive((current) => !current);
-    setButtonText();
+    // setIsActive((current) => !current);
+    // setButtonText();
   };
 
   return (
     <>
       <table>
-
         <tr>
           <th>{props.date.toDateString()}</th>
-          <th>9 Uhr</th>
-          <th>11 Uhr</th>
-          <th>17 Uhr</th>
-          <th>19 Uhr</th>
+          <th className="kursname">{props.kurs}</th>
         </tr>
         <tr>
-          <th>Yogakurs</th>
-          <th>
-            <Toggle />
-          </th>
-          <th>
-            <Toggle />
-          </th>
-          <th>
-            <Toggle />
-          </th>
-          <th>
-            <Toggle />
-          </th>
+          <td>9 Uhr</td>
+          <td><Toggle /></td>
         </tr>
-        
+        <tr>
+          <td>11 Uhr</td>
+          <td><Toggle /></td>
+        </tr>
+        <tr>
+          <td>17 Uhr</td>
+          <td><Toggle /></td>
+        </tr>
+        <tr>
+          <td>19 Uhr</td>
+          <td><Toggle /></td>
+        </tr>
       </table>
       <p>lorem ipsum dolor sit amet, consectetur adipis</p>
 
