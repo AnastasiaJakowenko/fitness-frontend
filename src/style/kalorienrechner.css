@@ -148,7 +148,26 @@ label input {
         margin-left: -3.5rem;
         display: flex;
         flex-wrap: wrap;
+
         justify-content: space-evenly;
       
     }
 }
+
+        justify-content: space-evenly; 
+         }
+}
+
+@media only screen and (min-width: 300px){
+.weight{
+    margin-left:4.5rem;
+}
+}
+@media only screen and (min-width: 420px){
+    .weight{
+        margin-left:7rem;
+    }
+    }
+
+
+

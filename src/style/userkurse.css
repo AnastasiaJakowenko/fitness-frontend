@@ -12,14 +12,17 @@
   align-items: space-between;
 }
 
-.userKurseNavRechts div {
+.userKurseNavRechts p {
+  font-weight: bold;
+}
 
-  font-size: 0.5rem;
-  padding: 1rem;
-  margin: 1rem;
+.userKurseNavRechts div {
+  font-size: 1rem;
+  padding: 0.4rem;
+  margin: 0.2rem;
+  line-height: 1;
   background-color: gray;
-  border-radius: 1rem;
-  height: max-content;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
@@ -32,30 +35,41 @@
   flex-direction: column;
 }
 
-
-
 /* Tabelle Buchungen für jeden Kurs*/
 
- table, th, td, caption {
+table,
+th,
+td,
+caption {
   border: 1px solid #f96a43;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  border-width: thin 0 0 thin;
-  margin: 0 0 1em;
-  table-layout:fixed;
+  border-collapse: separate;
+  border-spacing: 10;
+  border-width: 0.3rem;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  margin: 1rem;
+  table-layout: fixed;
   max-width: 100%;
 }
 
-th, td {
+th,
+td {
+  border-radius: 0.5rem;
   font-weight: normal;
   text-align: left;
+  text-align: center;
+  padding: 0.5rem;
 }
 
-th, caption {
+th,
+caption {
   background-color: #f1f3f4;
   font-weight: 700;
 }
 
+.kursname {
+  width: 11rem;
+}
