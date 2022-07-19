@@ -2,7 +2,7 @@
 .register-container {
 
     padding: 2rem;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     
     background-color: #F4F4F4;
@@ -55,11 +55,9 @@ h1 {
 	
 	.register-container{
         display: flex;
-		width: 28vw;
-		margin: auto;
+		width: 35vw;
+		/* margin: auto; */
 	}
-    .probe{
-        justify-content: center;
-    }
+    
 	
 }
