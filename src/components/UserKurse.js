@@ -66,13 +66,13 @@ function UserKurse() {
                 {calendar &&
                     <>
                         <Calendar1 date={date} setDate={setDate} />
-                        <button onClick={() => setCalendar(false)} >Fertig</button>
+                        
                     </>}
 
                 <div className="userKurseHeading">
-                    <button onClick={() => onButtonClickYoga()}><h3>Yoga</h3></button>
-                    <button onClick={() => onButtonClickZumba()}><h3>Zumba</h3></button>
-                    <button onClick={() => onButtonClickSelbstverteidigung()}><h3>Selbstverteidigung</h3></button>
+                    <button onClick={() => onButtonClickYoga()}><h6>Yoga</h6></button>
+                    <button onClick={() => onButtonClickZumba()}><h6>Zumba</h6></button>
+                    <button onClick={() => onButtonClickSelbstverteidigung()}><h6>Selbstverteidigung</h6></button>
                 </div>
 
                 {buttonClickedYoga &&
