@@ -120,6 +120,7 @@ export const Register = () => {
   return (
     <>
       <div className="register-container">
+
         <h1 className='h1_register'> Registrieren</h1>
         <h3>Persönliche Daten</h3>
         <Form onSubmit={handleSubmit}>
@@ -221,6 +222,7 @@ export const Register = () => {
             Registrieren
           </Button>
         </Form>
+
       </div>
     </>
   );
