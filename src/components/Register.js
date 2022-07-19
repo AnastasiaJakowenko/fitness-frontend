@@ -50,7 +50,14 @@ export const Register = () => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
-    const data = await axios.post("http://localhost:4000/register", formValues);
+    try {
+      await axios.post("http://localhost:4000/register", formValues);
+      // console.log(data);
+    }
+    catch (error) {
+      console.log("Die Daten sind nicht geschickt", error);
+    }
+
   }
 
   useEffect(() => {
@@ -58,11 +65,13 @@ export const Register = () => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log(formValues);
     }
-  }, [formErrors]);
+  }, [formErrors, formValues, isSubmit]);
 
   const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+
+    // const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if (!values.firstName) {
       errors.firstName = "Vorname ist benötigt!";
