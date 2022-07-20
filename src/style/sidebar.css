@@ -99,6 +99,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item-list {
   color: #b8b7ad;
   padding: 0.8em;
+  width: max-content;
 }
 
 /* Individual item */
@@ -120,4 +121,19 @@ Note: Beware of modifying this element as it can break the animations - you shou
   /* background: rgba(0, 0, 0, 0.3); */
   height: auto !important;
   width: auto !important
+}
+/*um würter für mobile version zu vertecken und für grössere bildshirme das anzuzeigen in mediaquerry*/
+.menu-item  p{
+display: none;
+}
+@media only screen and (min-width: 600px){
+  .menu-item  p{
+    display: block;
+    font-size: 1rem;
+    margin-left: 3rem;
+    margin-top: -2rem;
+    }
+    .menu-item p:hover{
+      color: #f96a43;
+    }
 }
