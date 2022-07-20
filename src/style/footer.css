@@ -20,7 +20,7 @@ flex-direction: row;
   margin-top: 1rem;
 }
 
-.footer .icons {
+.footer_icons a{
   display: flex;
   color: #ffffff;
   font-size: 2rem;
@@ -28,7 +28,7 @@ flex-direction: row;
   padding-left: 2rem;
 }
 
-.footer .icons:hover {
+.footer_icons a .icons:hover {
   color: #f96a43;
 }
 
