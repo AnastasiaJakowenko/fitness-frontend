@@ -10,7 +10,7 @@ function Sidebar() {
         <p>Home</p>
       </a>
       <a className="menu-item" href="/userkurse">
-        <i className="fa-solid fa-person-running"></i><p>Kurse</p>
+        <i className="fa-solid fa-person-running"></i><p>Meine Kurse</p>
       </a>
       <a className="menu-item" href="/usersportgeraete">
         <i className="fa-solid fa-dumbbell"></i><p>Sportgeräte</p>
