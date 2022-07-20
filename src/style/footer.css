@@ -28,7 +28,7 @@ flex-direction: row;
   padding-left: 2rem;
 }
 
-.footer_icons a .icons:hover {
+.footer_icons .icons:hover {
   color: #f96a43;
 }
 

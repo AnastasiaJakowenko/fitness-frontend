@@ -3,6 +3,7 @@ import "../style/userkurse.css";
 import { useState } from "react";
 import { Calendar1 } from "./Calendar1.js";
 import { UserKurseTabellen } from "./UserKurseTabellen.js";
+import Userkurse_slide_show from "./userkurse_slide_show";
 
 function UserKurse() {
   // zum backend schicken
@@ -48,43 +49,58 @@ function UserKurse() {
   return (
     <>
       <div className="userKurse">
-        <h1>Hallo SportlerIn. Das sind deine Kurse</h1>
-        <div className="userKurseNav">
-          <div className="userKurseNavRechts">
-            <div onClick={() => zeigCalendar()}>
-              <i
-                className="fa-regular fa-calendar-days"
-              ></i>
-            </div>
-            <div>
-              <i className="fa-solid fa-circle-arrow-left"></i>
-            </div>
-            <div  onClick={() => new Date()()}>
-              <p>Heute</p>
-            </div>
-            <div>
-              <i className="fa-solid fa-circle-arrow-right"></i>
+        <div className="table_nav">
+          <h2>Hallo SportlerIn. Das sind deine Kurse</h2>
+          <div className="userKurseNav">
+            <div className="userKurseNavRechts">
+              <div onClick={() => zeigCalendar()}>
+                <i
+                  className="fa-regular fa-calendar-days "
+                ></i>
+              </div>
+              <div>
+                <i className="fa-solid fa-circle-arrow-left"></i>
+              </div>
+              <div onClick={() => new Date()()}>
+                <p>Heute</p>
+              </div>
+              <div>
+                <i className="fa-solid fa-circle-arrow-right"></i>
+              </div>
             </div>
           </div>
-        </div>
-        {calendar && (
+          {calendar && (
             <Calendar1 date={date} setDate={onDateClick} />
-        )}
-        <div className="userKurseHeading">
-          <button onClick={() => onButtonClickYoga()}>
-            <h6>Yoga</h6>
-          </button>
-          <button onClick={() => onButtonClickZumba()}>
-            <h6>Zumba</h6>
-          </button>
-          <button onClick={() => onButtonClickSelbstverteidigung()}>
-            <h6>Selbstverteidigung</h6>
-          </button>
+          )}
+          <div className="userKurseHeading">
+            <button onClick={() => onButtonClickYoga()}>
+              <h6>Yoga</h6>
+            </button>
+            <button onClick={() => onButtonClickZumba()}>
+              <h6>Zumba</h6>
+            </button>
+            <button onClick={() => onButtonClickSelbstverteidigung()}>
+              <h6>Selbstverteidigung</h6>
+            </button>
+          </div>
+          {buttonClickedYoga && <UserKurseTabellen date={date} kurs={"Yoga"} />}
+          {buttonClickedZumba && <UserKurseTabellen date={date} kurs={"Zumba"} />}
+          {buttonClickedSelbstverteidigung && (<UserKurseTabellen date={date} kurs={"Selbstverteidigung"} />)}
         </div>
-        {buttonClickedYoga && <UserKurseTabellen date={date} kurs={"Yoga"} />}
-        {buttonClickedZumba && <UserKurseTabellen date={date} kurs={"Zumba"} />}
-        {buttonClickedSelbstverteidigung && (<UserKurseTabellen date={date} kurs={"Selbstverteidigung"} />)}
+        <div className="slide_text">
+          <Userkurse_slide_show />
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed
+            lacus
+            pulvinar, sagittis ligula a, pretium erat. Sed condimentum tincidunt quam, eget iaculis magna
+            condimentum tincidunt. Nam euismod dolor id nunc dapibus, vel dapibus tellus facilisis.
+            Curabitur ut
+            eros molestie, scelerisque lectus in, fringilla nisi. Fusce vitae feugiat enim. Nam varius lorem
+            ac
+            tincidunt gravida. In id arcu lacinia, volutpat velit non, sodales lorem.
+            </p>
+        </div>
       </div>
+
     </>
   );
 }

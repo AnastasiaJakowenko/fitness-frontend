@@ -34,7 +34,6 @@ export function UserKurseTabellen(props) {
           <td><Toggle /></td>
         </tr>
       </table>
-      <p>lorem ipsum dolor sit amet, consectetur adipis</p>
 
 
 

@@ -4,12 +4,16 @@
 
 .userKurseNav {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
+  
 }
 
 .userKurseNavRechts {
   display: flex;
   align-items: space-between;
+  justify-content: center;
+
 }
 
 .userKurseNavRechts p {
@@ -22,7 +26,7 @@
   padding: 0.4rem;
   margin: 0.2rem;
   line-height: 1;
-  background-color: gray;
+  /* background-color: gray; */
   border-radius: 0.5rem;
   cursor: pointer;
 }
@@ -34,20 +38,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
   line-height: 1;
 }
 
 .userKurseHeading button {
   width: 10rem;
   margin: 0.5rem;
-  padding:0.4rem;
+  padding: 0.4rem;
   border-radius: 0.5rem;
-  background: linear-gradient(
-    160deg,
-    #f96a43 45%,
-    rgba(255, 137, 102, 0) 110%
-  );
+  background: linear-gradient(160deg,
+      #f96a43 45%,
+      rgba(255, 137, 102, 0) 110%);
 }
 
 .userKurseHeading button:hover {
@@ -98,33 +99,64 @@ caption {
   width: 11rem;
 }
 
+.slide_text {
+  display: none;
+}
+
 /* media querry */
 
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) {
 
   .userKurseNav {
     justify-content: start;
     width: max-content;
     margin-left: 3rem;
-    border: 2px solid black;
-    border-radius: 0.5rem;
-}
-
-.userKurseNavRechts div{
-  width: 5rem;
-  margin: 0.5rem;
-  padding: 0.4rem;
-  border-radius: 0.5rem;
-  background: linear-gradient( 160deg, #f96a43 45%, rgba(255, 137, 102, 0) 110% );
+    /* border: 2px solid black;
+    border-radius: 0.5rem; */
   }
-  
+
+  .userKurseNavRechts div {
+    /* width: 5rem; */
+    margin: 0.5rem;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    /* background: linear-gradient( 160deg, #f96a43 45%, rgba(255, 137, 102, 0) 110% ); */
+  }
+
   .userKurseHeading {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   table {
-    margin-left: 7rem;
+    margin: auto;
+    margin-top: 1rem;
+    width: max-content;
   }
+
+  .slide_text {
+    display: block;
+    text-align: justify;
+  }
+
+  .userKurse {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    gap: 2rem;
+  }
+
+  .userKurseNavRechts .fa-calendar-days {
+    color: #f96a43;
+  }
+
+ 
+
 }
 
+/*tablet*/
+@media only screen and (min-width: 1000px) {
+  .userKurseHeading {
+    flex-direction: row;
+  }
+}
