@@ -1,9 +1,21 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import '../style/register.css';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
+import { useNavigate } from 'react-router-dom';
+import { RegisterContext } from "../context/registerContext.js";
 export const Register = () => {
+
+  const [isRegistered, setIsRegistered] = useContext(RegisterContext);
+  const navigate = useNavigate();
+
+  // const handleRegister = () => {
+  //   const isRegistered = !isRegistered;
+  //   setIsRegistered(isRegistered);
+  // }
+
+
   const initialValues = {
     firstName: "",
     lastName: "",
@@ -50,14 +62,14 @@ export const Register = () => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
+    setIsRegistered(true);
     try {
       await axios.post("http://localhost:4000/register", formValues);
-      // console.log(data);
+      navigate('/');
     }
     catch (error) {
       console.log("Die Daten sind nicht geschickt", error);
     }
-
   }
 
   useEffect(() => {
