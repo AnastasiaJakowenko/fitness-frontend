@@ -6,15 +6,14 @@ export const Calendar1 =(props)=> {
 
   return (
     <>
-    <div className='app'>
-      <h1 className='text-center'>React Calendar</h1>
+     <div className='app'>
       <div className='calendar-container'>
-        <Calendar onChange={props.setDate} value={props.date} />
+    <Calendar onChange={props.setDate} value={props.date} />
       </div>
-      <p className='text-center'>
+        {/* <p className='text-center'>
         <span className='bold'>Selected Date:</span>{' '}
         {props.date.toDateString()}
-      </p>
+      </p> */}
     </div>
     </>
   );

@@ -64,8 +64,9 @@
 .fa-cubes:before {
   color: #f96a43;
 }
-.fa-calendar-alt:before,
-.fa-calendar-days:before {
+
+.fitness_text_container .fa-calendar-alt:before,
+.fitness_text_container .fa-calendar-days:before {
   color: #f96a43;
 }
 @media only screen and (min-width: 600px) {
