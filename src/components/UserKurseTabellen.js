@@ -1,6 +1,6 @@
 import React from "react";
 // import { useState } from "react";
-import { Toggle } from "./UserKurseTabellenButton.js";
+import { BookingBtn } from "./UserKurseTabellenButton.js";
 
 export function UserKurseTabellen(props) {
   // const [isActive, setIsActive] = useState(false);
@@ -19,19 +19,19 @@ export function UserKurseTabellen(props) {
         </tr>
         <tr>
           <td>9 Uhr</td>
-          <td className="td-button"><Toggle /></td>
+          <td className="td-button"><BookingBtn /></td>
         </tr>
         <tr>
           <td>11 Uhr</td>
-          <td className="td-button"><Toggle /></td>
+          <td className="td-button"><BookingBtn /></td>
         </tr>
         <tr>
           <td>17 Uhr</td>
-          <td className="td-button"><Toggle /></td>
+          <td className="td-button"><BookingBtn /></td>
         </tr>
         <tr>
           <td>19 Uhr</td>
-          <td className="td-button"><Toggle /></td>
+          <td className="td-button"><BookingBtn /></td>
         </tr>
       </table>
 

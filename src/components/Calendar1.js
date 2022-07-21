@@ -6,7 +6,7 @@ export const Calendar1 =(props)=> {
 
   return (
     <>
-     <div className='app'>
+     {/* <div className='app'> */}
       <div className='calendar-container'>
     <Calendar onChange={props.setDate} value={props.date} />
       </div>
@@ -14,7 +14,7 @@ export const Calendar1 =(props)=> {
         <span className='bold'>Selected Date:</span>{' '}
         {props.date.toDateString()}
       </p> */}
-    </div>
+    {/* </div> */}
     </>
   );
 }

@@ -3,7 +3,7 @@ import "../style/userkurse.css";
 import { useState } from "react";
 import { Calendar1 } from "./Calendar1.js";
 import { UserKurseTabellen } from "./UserKurseTabellen.js";
-import Userkurse_slide_show from "./userkurse_slide_show";
+import UserKurseSlideShow from "./UserKurseSlideShow";
 
 function UserSportgeraete() {
     const [date, setDate] = useState(new Date());
@@ -80,7 +80,7 @@ function UserSportgeraete() {
                     {buttonClickedMedizinball && (<UserKurseTabellen date={date} kurs={"Medizinball"} />)}
                 </div>
                 <div className="slide_text">
-                    <Userkurse_slide_show />
+                    <UserKurseSlideShow />
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed
                         lacus
                         pulvinar, sagittis ligula a, pretium erat. Sed condimentum tincidunt quam, eget iaculis magna
