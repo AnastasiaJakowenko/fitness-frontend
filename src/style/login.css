@@ -43,6 +43,11 @@ h1 {
 	bottom: -2rem;
 }
 
+.p-alert {
+	color: tomato;
+	font-weight: bold;
+}
+
 @media only screen and (min-width: 600px) {
 	.loginContainer {
 		width: 50vw;

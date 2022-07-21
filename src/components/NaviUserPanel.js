@@ -1,15 +1,18 @@
 import React from "react";
 import "../style/navigation.css";
 import { useContext } from 'react';
-import { LogoutContext } from "../context/loginContext.js";
+import { LogoutContext, LoginContext } from "../context/loginContext.js";
 
 const NaviUserPanel = () => {
-    // const { auth, logout } = useContext(LogoutContext);
+
+    const [isLogged, setIsLogged] = useContext(LoginContext);
     const { logout } = useContext(LogoutContext);
     const logoutHandler = logout;
+
     return (
         <>
-            <ul className="nav">
+
+            {isLogged ? (<ul className="nav">
                 <li className="nav-item home">
                     <a className="nav-link active" href="/">
                         <i className="fa-solid fa-house"></i>
@@ -23,7 +26,13 @@ const NaviUserPanel = () => {
                         </span>
                     </li>
                 </div>
-            </ul>
+            </ul>) : (<ul className="nav">
+                <li className="nav-item home">
+                    <a className="nav-link active" href="/">
+                        <i className="fa-solid fa-house"></i>
+                    </a>
+                </li>
+            </ul>)}
         </>
     );
 
