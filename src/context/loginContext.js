@@ -34,6 +34,7 @@ export const LogoutContextProvider = (props) => {
     const [isLogged, setIsLogged] = useContext(LoginContext);
 
     const logoutHandler = async () => {
+
         const response = await axios.post("http://localhost:4000/logout", {}, { withCredentials: true })
         console.log("responseInLoginContext", response);
         setIsLogged(false);
