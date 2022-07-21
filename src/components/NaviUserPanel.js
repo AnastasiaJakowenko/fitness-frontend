@@ -1,30 +1,12 @@
 import React from "react";
-
 import "../style/navigation.css";
-// import "../style/nav.css";
+import { useContext } from 'react';
+import { LogoutContext } from "../context/loginContext.js";
 
-import Cookies from 'js-cookie';
-import { useState } from 'react';
-import axios from "axios";
 const NaviUserPanel = () => {
-
-
-    const [isAuth, setIsAuth] = useState(false);
-    const [token, setToken] = useState('');
-
-    const baseURL = "http://localhost:4000";
-    const axiosPublic = axios.create({
-        baseURL: baseURL,
-        withCredentials: true
-    });
-
-    const logoutHandler = async () => {
-        await axiosPublic.post("/logout")
-        setIsAuth(false);
-        setToken('');
-        Cookies.remove('email');
-    };
-
+    // const { auth, logout } = useContext(LogoutContext);
+    const { logout } = useContext(LogoutContext);
+    const logoutHandler = logout;
     return (
         <>
             <ul className="nav">
@@ -36,13 +18,15 @@ const NaviUserPanel = () => {
 
                 <div className="rechts">
                     <li className="nav-item">
-                        <a className="nav-link" href="/">
-                            <i className="fa fa-sign-out fa-2x" aria-hidden="true" onClick={() => logoutHandler()}></i>
-                        </a>
+                        <span className="nav-link" href="/" onClick={(e) => { e.preventDefault(); logout() }}>
+                            <i className="fa fa-sign-out fa-2x" aria-hidden="true" ></i>
+                        </span>
                     </li>
                 </div>
             </ul>
         </>
     );
+
 }
+
 export default NaviUserPanel;

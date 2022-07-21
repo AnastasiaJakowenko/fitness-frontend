@@ -19,19 +19,19 @@ export function UserKurseTabellen(props) {
         </tr>
         <tr>
           <td>9 Uhr</td>
-          <td><Toggle /></td>
+          <td className="td-button"><Toggle /></td>
         </tr>
         <tr>
           <td>11 Uhr</td>
-          <td><Toggle /></td>
+          <td className="td-button"><Toggle /></td>
         </tr>
         <tr>
           <td>17 Uhr</td>
-          <td><Toggle /></td>
+          <td className="td-button"><Toggle /></td>
         </tr>
         <tr>
           <td>19 Uhr</td>
-          <td><Toggle /></td>
+          <td className="td-button"><Toggle /></td>
         </tr>
       </table>
 

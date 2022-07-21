@@ -10,7 +10,7 @@ export const HomePage = () => {
         <>
             <Navigation />
             <About />
-            <Tools/>
+            <Tools />
             <FitnessPlan />
             <Kurse />
             <Footer />
