@@ -1,10 +1,10 @@
 import Footer from "../components/Footer.js";
-import Navigation from "../components/Navigation.js";
+import NaviUserPanel from "../components/NaviUserPanel.js";
 import { Login } from "../components/Login.js"
 export const LoginPage = () => {
     return (
         <>
-            <Navigation />
+            <NaviUserPanel />
             <Login />
             <Footer />
         </>

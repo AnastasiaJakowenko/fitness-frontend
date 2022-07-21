@@ -10,12 +10,6 @@ export const Register = () => {
   const [isRegistered, setIsRegistered] = useContext(RegisterContext);
   const navigate = useNavigate();
 
-  // const handleRegister = () => {
-  //   const isRegistered = !isRegistered;
-  //   setIsRegistered(isRegistered);
-  // }
-
-
   const initialValues = {
     firstName: "",
     lastName: "",
@@ -83,8 +77,6 @@ export const Register = () => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
-    // const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
     if (!values.firstName) {
       errors.firstName = "Vorname ist benötigt!";
     }
@@ -110,19 +102,23 @@ export const Register = () => {
       errors.repassword = "Bitte Passwort wiederholen!";
     }
 
-    else if (!values.address.street) {
+    if (!values.age) {
+      errors.age = "Alter ist benötigt!!";
+    }
+
+    if (!values.address.street) {
       errors.street = "Straße ist benötigt!";
     }
 
-    else if (!values.address.number) {
+    if (!values.address.number) {
       errors.number = "Hausnummer ist benötigt!";
     }
 
-    else if (!values.address.city) {
+    if (!values.address.city) {
       errors.city = "Stadt ist benötigt!";
     }
 
-    else if (!values.address.zip) {
+    if (!values.address.zip) {
       errors.zip = "PLZ ist benötigt!";
     }
     return errors;
@@ -156,6 +152,7 @@ export const Register = () => {
             <i className="fa-solid fa-person icon"></i>
 
             <Form.Control type="number" placeholder="Alter:" name="age" value={formValues.age} onChange={handleChange} />
+            <p className="p-alert">{formErrors.age}</p>
 
             <Form.Group className="mb-3">
 
@@ -229,7 +226,6 @@ export const Register = () => {
 
           <p className="p-alert">{formErrors.zip}</p>
 
-          {/* <Button variant="primary" type="submit" onSubmit={handleSubmit}> */}
           <Button variant="primary" type="submit">
             Registrieren
           </Button>
