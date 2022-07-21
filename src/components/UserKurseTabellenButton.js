@@ -18,12 +18,9 @@ export class Toggle extends React.Component {
 
   render() {
     return (
-      <button onClick={this.handleClick}>
+      <button className="table-button" onClick={this.handleClick}>
         {this.state.isToggleOn ? 'Frei' : 'Gebucht'
-          // this.state.isToggleOn ? 'style={backgroundColor:"green", color:"white"}' : 'style={backgroundColor:"blue", color:"grey"}'
-
-
-
+         // this.state.isToggleOn ? 'style={backgroundColor:"green", color:"white"}' : 'style={backgroundColor:"blue", color:"grey"}'
 
         }
       </button>
