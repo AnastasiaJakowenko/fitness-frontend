@@ -5,18 +5,28 @@ import axios from "axios";
 
 function UserInfo() {
 
-    const [isLogged, setIsLogged] = useContext(LoginContext);
+
+    const { login, id } = useContext(LoginContext);
+    // const [isLogged, setIsLogged] = useContext(LoginContext);
+    const [isLogged, setIsLogged] = login;
+    const [userId, setUserId] = id;
+
+    // const [isLogged, setIsLogged] = useContext(LoginContext);
     // const [userInfo, setUserInfo] = useState(["firstName", "lastName", "course_name", "device_name"]);
     const [userInfo, setUserInfo] = useState([]);
     // const memberId = "62d00ea03210a997c5acb3d9";
-    const baseUrl = `http://localhost:4000/info/62d00ea03210a997c5acb3d9`;
-    const _id = "62d00ea03210a997c5acb3d9";
 
+    const memberId = userId.slice(3, userId.length - 1);
+    const baseUrl = `http://localhost:4000/info/${memberId}`;
+
+
+    // j:"62d7aef788a6cbc308fd7a76"
+
+    console.log("memberId", memberId);
     useEffect(() => {
         (async () => {
             const userInfo = await axios.get(baseUrl);
             setUserInfo(userInfo.data);
-            console.log(userInfo);
         })();
     }, [])
 
@@ -33,9 +43,7 @@ function UserInfo() {
                     />
                     {isLogged ? (userInfo.map((item, i) => {
                         return (
-                            <>
-                                <h3> Hallo {item.firstName}!</h3>
-                            </>
+                            <h3 key={i}> Hallo {item.firstName}!</h3>
                         )
 
                     })) : (<h3> Hallo user!</h3>)}

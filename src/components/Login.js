@@ -9,7 +9,11 @@ import axios from 'axios';
 
 export const Login = () => {
 
-    const [isLogged, setIsLogged] = useContext(LoginContext);
+    const { login, id } = useContext(LoginContext);
+    const [isLogged, setIsLogged] = login;
+    const [userId, setUserId] = id;
+
+    // const [isLogged, setIsLogged] = useContext(LoginContext);
     const [isSubmit, setIsSubmit] = useState(false);
     const [input, setInput] = useState({ email: "", password: "" });
     const [formErrors, setFormErrors] = useState({});

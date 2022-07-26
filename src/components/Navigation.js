@@ -6,11 +6,16 @@ import { LoginContext, LogoutContext } from "../context/loginContext.js";
 
 function Navigation() {
   const [isRegistered, setIsRegistered] = useContext(RegisterContext);
-  const [isLogged, setIsLogged] = useContext(LoginContext);
+  // const [isLogged, setIsLogged] = useContext(LoginContext);
 
+  const { login, id } = useContext(LoginContext);
   const { auth, logout } = useContext(LogoutContext);
   const [isAuth, setIsAuth] = auth;
   // const [token, setToken] = tokenValue;
+
+  const [isLogged, setIsLogged] = login;
+  const [userId, setUserId] = id;
+
   const logoutHandler = logout;
 
   const handleRegister = () => {

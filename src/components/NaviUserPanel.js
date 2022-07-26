@@ -5,7 +5,12 @@ import { LogoutContext, LoginContext } from "../context/loginContext.js";
 
 const NaviUserPanel = () => {
 
-    const [isLogged, setIsLogged] = useContext(LoginContext);
+
+    const { login, id } = useContext(LoginContext);
+    // const [isLogged, setIsLogged] = useContext(LoginContext);
+    const [isLogged, setIsLogged] = login;
+    const [userId, setUserId] = id;
+
     const { logout } = useContext(LogoutContext);
     const logoutHandler = logout;
 
