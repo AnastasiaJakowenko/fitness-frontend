@@ -13,9 +13,14 @@
 	width: 100vw;
 }
 
-.home i {
+i {
 	color: white;
 	font-size: 2rem;
+	transition: 0.5s color ease-in-out;
+}
+
+i:hover {
+	color: #f96a43;
 }
 
 .rechts {
@@ -33,6 +38,7 @@
 }
 .nav-link {
 	color: white;
+	transition: 0.5s color ease-in-out;
 }
 .nav-link:hover {
 	color: #f96a43;

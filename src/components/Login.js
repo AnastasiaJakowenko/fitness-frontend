@@ -42,7 +42,7 @@ export const Login = () => {
 
     useEffect(() => {
         if (Object.keys(formErrors).length === 0 && isSubmit) {
-            console.log(input);
+            // console.log(input);
         }
     }, [formErrors, input, isSubmit]);
 
@@ -71,7 +71,7 @@ export const Login = () => {
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <i className="fa-regular fa-envelope icon"></i>
-                    < Form.Control name="email" type="email" value={input.email} placeholder="Email:" onChange={(e) => inputHandler(e)} />
+                    < Form.Control name="email" type="email" value={input.email} placeholder="Email:" onChange={(e) => inputHandler(e)} className="inputText" />
                     <Form.Text className="text-muted">
                     </Form.Text>
                 </Form.Group>
@@ -79,7 +79,8 @@ export const Login = () => {
                 <p className="p-alert">{formErrors.email}</p>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <i className="fa-solid fa-lock icon"></i> <Form.Control type="password" placeholder="Password:" name="password" value={input.password} onChange={(e) => inputHandler(e)} />
+                    <i className="fa-solid fa-lock icon"></i>
+                    <Form.Control type="password" placeholder="Password:" name="password" value={input.password} onChange={(e) => inputHandler(e)} className="inputText" />
                 </Form.Group>
 
                 <p className="p-alert">{formErrors.password}</p>

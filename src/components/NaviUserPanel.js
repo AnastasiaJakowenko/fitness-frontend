@@ -22,7 +22,7 @@ const NaviUserPanel = () => {
                 <div className="rechts">
                     <li className="nav-item">
                         <span className="nav-link" href="/" onClick={(e) => { e.preventDefault(); logout() }}>
-                            <i className="fa fa-sign-out fa-2x" aria-hidden="true" ></i>
+                            <i className="fa fa-sign-out" aria-hidden="true" ></i>
                         </span>
                     </li>
                 </div>
