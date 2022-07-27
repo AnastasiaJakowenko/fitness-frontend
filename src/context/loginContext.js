@@ -14,14 +14,11 @@ export const LoginContextProvider = (props) => {
     useEffect(() => {
         if (Cookies.get("isLogged"))
             setIsLogged(true);
+
         setUserId(Cookies.get("userId"));
+
     }, [])
 
-
-    // console.log(Cookies.get("userId"));
-    console.log("userId", userId);
-    // console.log("isLogged", isLogged);
-    // console.log("userId", userId);
     return (
         <LoginContext.Provider value={{
             login: [isLogged, setIsLogged],
