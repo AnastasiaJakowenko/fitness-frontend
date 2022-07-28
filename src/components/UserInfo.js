@@ -7,35 +7,24 @@ function UserInfo() {
 
 
     const { login, id } = useContext(LoginContext);
-    // const [isLogged, setIsLogged] = useContext(LoginContext);
     const [isLogged] = login;
     const [userId, setUserId] = id;
-    // const [baseUrl, setBaseUrl] = useState("");
 
     const baseUrl = `http://localhost:4000/info/`;
-    // const [isLogged, setIsLogged] = useContext(LoginContext);
-    // const [userInfo, setUserInfo] = useState(["firstName", "lastName", "course_name", "device_name"]);
     const [userInfo, setUserInfo] = useState([]);
-    // const memberId = "62d00ea03210a997c5acb3d9";
-    // const [memberId, setMemberId] = useState();
-    // j:"62d7aef788a6cbc308fd7a76"
+
+
 
     useEffect(() => {
         const showUserInfo = async () => {
 
-            // setMemberId(userId.slice(3, userId.length - 1));
-            // setUserId(memberId);
-            // console.log("userId 29", userId);
-            // console.log("memberId aus useEffect", memberId);
-
-            // setBaseUrl(`http://localhost:4000/info/${id}`);
-            // try {
-
-            // userId.slice(3, userId.length - 1)
-            setUserId(userId.slice(3, userId.length - 1));
-            console.log("userId in UserInfo", userId);
-            const userInfo = await axios.get(`${baseUrl}${userId}`);
-            setUserInfo(userInfo.data);
+            if (userId) {
+                // let convertUserId = userId.slice(3, userId.length - 1);
+                setUserId(userId.slice(3, userId.length - 1));
+                console.log("userId in UserInfo", userId);
+                const userInfo = await axios.get(`${baseUrl}${userId}`);
+                setUserInfo(userInfo.data);
+            }
         }
         showUserInfo();
     }, [])
@@ -94,7 +83,6 @@ function UserInfo() {
 
                                         })}
 
-                                        {/* <p><b>Geräte:</b> {item.device_name}</p> */}
                                     </div>
                                 )
                             })
