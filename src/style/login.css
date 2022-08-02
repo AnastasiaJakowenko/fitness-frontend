@@ -48,6 +48,10 @@ h1 {
 	font-weight: bold;
 }
 
+.inputText {
+	padding-left: 3rem;
+}
+
 @media only screen and (min-width: 600px) {
 	.loginContainer {
 		width: 50vw;

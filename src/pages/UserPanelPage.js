@@ -1,9 +1,13 @@
-import { UserPanel } from " ../component/UserPanel.js"
+import UserPanel from "../components/UserPanel.js";
+import Footer from "../components/Footer.js";
+import NaviUserPanel from "../components/NaviUserPanel.js";
 
-export const RegisterPage = () => {
+export const UserPanelPage = () => {
     return (
         <>
+            <NaviUserPanel />
             <UserPanel />
+            <Footer />
         </>
     );
 }

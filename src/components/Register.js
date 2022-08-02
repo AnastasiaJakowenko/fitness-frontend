@@ -134,7 +134,7 @@ export const Register = () => {
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" >
             <i className="fa-solid fa-user icon"> </i>
-            <Form.Control type="text" placeholder="Vorname:" name="firstName" value={formValues.firstName} onChange={handleChange} />
+            <Form.Control className="inputText" type="text" placeholder="Vorname:" name="firstName" value={formValues.firstName} onChange={handleChange} />
           </Form.Group>
 
           <p className="p-alert">{formErrors.firstName}</p>
@@ -143,7 +143,7 @@ export const Register = () => {
             <i className="fa-solid fa-user icon"></i>
 
             <Form.Control type="text" placeholder="Nachname:" name="lastName" value={formValues.lastName}
-              onChange={handleChange} />
+              onChange={handleChange} className="inputText" />
           </Form.Group>
 
           <p className="p-alert">{formErrors.lastName}</p>
@@ -151,14 +151,14 @@ export const Register = () => {
           <Form.Group className="mb-3">
             <i className="fa-solid fa-person icon"></i>
 
-            <Form.Control type="number" placeholder="Alter:" name="age" value={formValues.age} onChange={handleChange} />
+            <Form.Control type="number" placeholder="Alter:" name="age" value={formValues.age} onChange={handleChange} className="inputText" />
             <p className="p-alert">{formErrors.age}</p>
 
             <Form.Group className="mb-3">
 
               <i className="fa-regular fa-envelope icon"></i>
 
-              <Form.Control type="email" placeholder="Email:" name="email" value={formValues.email} onChange={handleChange} />
+              <Form.Control type="email" placeholder="Email:" name="email" value={formValues.email} onChange={handleChange} className="inputText" />
             </Form.Group>
 
             <p className="p-alert">{formErrors.email}</p>
@@ -166,14 +166,14 @@ export const Register = () => {
             <Form.Group className="mb-3">
 
               <i className="fa-solid fa-lock icon"></i>
-              <Form.Control type="password" placeholder="Passwort:" name="password" value={formValues.password} onChange={handleChange} />
+              <Form.Control type="password" placeholder="Passwort:" name="password" value={formValues.password} onChange={handleChange} className="inputText" />
             </Form.Group>
 
             <p className="p-alert">{formErrors.password}</p>
 
             <Form.Group className="mb-3">
               <i className="fa-solid fa-triangle-exclamation icon"> </i>
-              <Form.Control type="password" placeholder="Passwort bestätigen:" name="repassword" value={formValues.repassword} onChange={handleChange} />
+              <Form.Control type="password" placeholder="Passwort bestätigen:" name="repassword" value={formValues.repassword} onChange={handleChange} className="inputText" />
             </Form.Group>
 
             <p className="p-alert">{formErrors.repassword}</p>
@@ -181,22 +181,22 @@ export const Register = () => {
             <Form.Group className="mb-3">
               <i className="fa-solid fa-phone icon"></i>
 
-              <Form.Control type="text" placeholder="Tel.:" name="mobile" value={formValues.mobile} onChange={handleChange} />
+              <Form.Control type="text" placeholder="Tel.:" name="mobile" value={formValues.mobile} onChange={handleChange} className="inputText" />
 
             </Form.Group>
 
             <Form.Group className="mb-3">
               <i className="fa-solid fa-sack-dollar icon"></i>
 
-              <Form.Control type="text" placeholder="Bankverbindung:" name="accountNumber" value={formValues.accountNumber} onChange={handleChange} />
+              <Form.Control type="text" placeholder="Bankverbindung:" name="accountNumber" value={formValues.accountNumber} onChange={handleChange} className="inputText" />
 
             </Form.Group>
 
           </Form.Group>
-          <h3 className="adresseH3"> Adresse:</h3>
+          <h3 className="adresse-h3"> Adresse:</h3>
           <Form.Group className="mb-3">
             <i className="fa-solid fa-road icon"></i>
-            <Form.Control type="text" placeholder="Straße:" name="street" value={formValues.address.street} onChange={handleAddressChange} />
+            <Form.Control type="text" placeholder="Straße:" name="street" value={formValues.address.street} onChange={handleAddressChange} className="inputText" />
           </Form.Group>
 
           <p className="p-alert">{formErrors.street}</p>
@@ -204,7 +204,7 @@ export const Register = () => {
           <Form.Group className="mb-3">
 
             <i className="fa-solid fa-house-chimney-user icon"></i>
-            <Form.Control type="number" placeholder="Hausnummer:" name="number" value={formValues.number} onChange={handleAddressChange} />
+            <Form.Control type="number" placeholder="Hausnummer:" name="number" value={formValues.number} onChange={handleAddressChange} className="inputText" />
           </Form.Group>
 
           <p className="p-alert">{formErrors.number}</p>
@@ -212,7 +212,7 @@ export const Register = () => {
           <Form.Group className="mb-3">
             <i className="fa-solid fa-city icon"></i>
 
-            <Form.Control type="text" placeholder="Stadt:" name="city" value={formValues.city} onChange={handleAddressChange} />
+            <Form.Control type="text" placeholder="Stadt:" name="city" value={formValues.city} onChange={handleAddressChange} className="inputText" />
 
           </Form.Group>
 
@@ -221,7 +221,7 @@ export const Register = () => {
           <Form.Group className="mb-3">
 
             <i className="fa-solid fa-list-ol icon"></i>
-            <Form.Control type="number" placeholder="PLZ:" name="zip" value={formValues.zip} onChange={handleAddressChange} />
+            <Form.Control type="number" placeholder="PLZ:" name="zip" value={formValues.zip} onChange={handleAddressChange} className="inputText" />
           </Form.Group>
 
           <p className="p-alert">{formErrors.zip}</p>
