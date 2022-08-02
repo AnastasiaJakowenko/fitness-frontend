@@ -4,27 +4,19 @@ import { LoginContext } from "../context/loginContext.js";
 import axios from "axios";
 
 function UserInfo() {
-
-
     const { login, id } = useContext(LoginContext);
     const [isLogged] = login;
     const [userId, setUserId] = id;
 
     const baseUrl = `http://localhost:4000/info/`;
     const [userInfo, setUserInfo] = useState([]);
-
-
+    const [count, setCount] = useState(0);
 
     useEffect(() => {
         const showUserInfo = async () => {
-
-            if (userId) {
-                // let convertUserId = userId.slice(3, userId.length - 1);
-                setUserId(userId.slice(3, userId.length - 1));
-                console.log("userId in UserInfo", userId);
-                const userInfo = await axios.get(`${baseUrl}${userId}`);
-                setUserInfo(userInfo.data);
-            }
+            setUserId(userId.slice(3, userId.length - 1));
+            const userInfo = await axios.get(`${baseUrl}${userId}`);
+            setUserInfo(userInfo.data);
         }
         showUserInfo();
     }, [])
@@ -33,6 +25,7 @@ function UserInfo() {
 
     return (
         <>
+
             <div className="user_container">
                 <div className="container_gelb">
                     <img
@@ -42,7 +35,9 @@ function UserInfo() {
                     />
                     {isLogged ? (userInfo.map((item, i) => {
                         return (
-                            <h3 key={i}> Hallo {item.firstName}!</h3>
+                            <>
+                                <h3 key={i}> Hallo {item.firstName}!</h3>
+                            </>
                         )
 
                     })) : (<h3> Hallo user!</h3>)}
