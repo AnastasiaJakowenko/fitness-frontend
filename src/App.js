@@ -20,6 +20,7 @@ import { RegisterContextProvider } from "./context/registerContext.js";
 import { LoginContextProvider, LogoutContextProvider } from "./context/loginContext.js";
 import { UserInfoPage } from "./pages/UserInfoPage.js";
 
+
 function App() {
   return (
     <>
