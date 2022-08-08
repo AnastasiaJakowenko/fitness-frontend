@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage.js";
 import { LoginPage } from "./pages/LoginPage.js";
 import { RegisterPage } from "./pages/RegisterPage.js"
-import UserPanel from "./components/UserPanel.jsx";
+import { UserPanelPage } from "./pages/UserPanelPage.js";
 import { ImpressumPage } from "./pages/ImpressumPage.js";
 import { KontaktPage } from "./pages/KontaktPage.js";
 import { UserSportgeraetePage } from "./pages/UserSportgeraetePage.js";
@@ -18,6 +18,7 @@ import { UserVertragInfosPage } from "./pages/UserVertragInfosPage.js";
 import { Calendar1 } from "./components/Calendar1.js";
 import { RegisterContextProvider } from "./context/registerContext.js";
 import { LoginContextProvider, LogoutContextProvider } from "./context/loginContext.js";
+import { UserInfoPage } from "./pages/UserInfoPage.js";
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
               <Route path="/register" element={<RegisterPage />} />
               <Route path="/impressum" element={<ImpressumPage />} />
               <Route path="/kontakt" element={<KontaktPage />} />
-              <Route path="/userPanel" element={<UserPanel />} />
+              <Route path="/userPanel" element={<UserPanelPage />} />
               <Route path="/usersportgeraete" element={<UserSportgeraetePage />} />
               <Route path="/bmirechner" element={<UserBmiRechnerPage />} />
               <Route path="/usereinstellungen" element={<UserEinstellungenPage />} />
@@ -42,6 +43,7 @@ function App() {
               <Route path="/userkurse" element={<UserKursePage />} />
               <Route path="/uservertraginfos" element={<UserVertragInfosPage />} />
               <Route path="/userkurse" element={<Calendar1 />} />
+              <Route path="/userInfo" element={<UserInfoPage />} />
             </Routes>
           </LogoutContextProvider>
         </LoginContextProvider>

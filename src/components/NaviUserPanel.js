@@ -5,7 +5,12 @@ import { LogoutContext, LoginContext } from "../context/loginContext.js";
 
 const NaviUserPanel = () => {
 
-    const [isLogged, setIsLogged] = useContext(LoginContext);
+
+    const { login, id } = useContext(LoginContext);
+    // const [isLogged, setIsLogged] = useContext(LoginContext);
+    const [isLogged, setIsLogged] = login;
+    const [userId, setUserId] = id;
+
     const { logout } = useContext(LogoutContext);
     const logoutHandler = logout;
 
@@ -22,7 +27,7 @@ const NaviUserPanel = () => {
                 <div className="rechts">
                     <li className="nav-item">
                         <span className="nav-link" href="/" onClick={(e) => { e.preventDefault(); logout() }}>
-                            <i className="fa fa-sign-out fa-2x" aria-hidden="true" ></i>
+                            <i className="fa fa-sign-out" aria-hidden="true" ></i>
                         </span>
                     </li>
                 </div>

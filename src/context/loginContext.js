@@ -9,14 +9,21 @@ export const LoginContext = createContext();
 export const LoginContextProvider = (props) => {
 
     const [isLogged, setIsLogged] = useState(false);
+    const [userId, setUserId] = useState("");
 
     useEffect(() => {
         if (Cookies.get("isLogged"))
             setIsLogged(true);
+
+        setUserId(Cookies.get("userId"));
+
     }, [])
 
     return (
-        <LoginContext.Provider value={[isLogged, setIsLogged]}>
+        <LoginContext.Provider value={{
+            login: [isLogged, setIsLogged],
+            id: [userId, setUserId]
+        }}>
             {props.children}
         </LoginContext.Provider>
     );
@@ -31,7 +38,8 @@ export const LogoutContextProvider = (props) => {
     const [isAuth, setIsAuth] = useState(false);
     // später token weg machen
     // const [token, setToken] = useState(false);
-    const [isLogged, setIsLogged] = useContext(LoginContext);
+    const { login } = useContext(LoginContext);
+    const [isLogged, setIsLogged] = login;
 
     const logoutHandler = async () => {
 
