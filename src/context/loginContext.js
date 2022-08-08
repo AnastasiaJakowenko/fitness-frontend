@@ -12,12 +12,22 @@ export const LoginContextProvider = (props) => {
     const [userId, setUserId] = useState("");
 
     useEffect(() => {
+        console.log("alle cookies", Cookies.get())
+
         if (Cookies.get("isLogged"))
             setIsLogged(true);
+        // Wir kriegen aus dem Cookie den String j:"62f0d18829244ad4c180b4fd"
+        // was rauskommen soll: 62f0d18829244ad4c180b4fd
+        const cookieId = setUserId(Cookies.get("userId")) || "default";
+        console.log("userId im logincontext vor slice ", userId)
+        setUserId(cookieId.slice(3, cookieId.length - 1));
 
-        setUserId(Cookies.get("userId"));
+        // console.log("userId in context", userId)
+    }, [isLogged]);
 
-    }, [])
+    useEffect(() => {
+        console.log("userId im logincontext nach slice ", userId)
+    }, [userId]) 
 
     return (
         <LoginContext.Provider value={{
