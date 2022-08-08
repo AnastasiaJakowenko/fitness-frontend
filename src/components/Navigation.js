@@ -14,6 +14,9 @@ function Navigation() {
         </div>
         <div className="rechts">
           <div>
+          <a className="nav-link kurse_link" href="/kurse">
+              Kurse
+            </a>
             <a className="nav-link" href="/register">
               Register
             </a>

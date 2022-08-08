@@ -9,7 +9,7 @@
 
 .about_p {
 	padding: 1rem;
-	text-align: justify;
+	text-align: justify; /*damit text-rand von rechte seite auch gut assieht*/
 	text-align-last: center;
 }
 

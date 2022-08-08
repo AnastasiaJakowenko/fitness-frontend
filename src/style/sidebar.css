@@ -123,10 +123,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   width: auto !important
 }
 /*um würter für mobile version zu vertecken und für grössere bildshirme das anzuzeigen in mediaquerry*/
-.menu-item  p{
+/* .menu-item  p{
 display: none;
-}
-@media only screen and (min-width: 600px){
+} */
+
   .menu-item  p{
     display: block;
     font-size: 1rem;
@@ -136,4 +136,3 @@ display: none;
     .menu-item p:hover{
       color: #f96a43;
     }
-}
