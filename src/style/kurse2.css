@@ -2,6 +2,8 @@
     padding: 1rem;
     font-family: 'Josefin Sans', sans-serif;
     font-size: larger;
+
+
 }
 
 .video {
@@ -31,11 +33,12 @@
     text-align: center;
     font-weight: 900;
     font-size: 35px;
+    margin-top: 2rem;
 }
 
 @media only screen and (min-width: 780px) {
     .video {
-        width: 70% !important;
+        width: 100% !important;
         height: 300px ! important;
         padding: 1rem;
     }
@@ -43,7 +46,12 @@
     .kurse2_p {
         margin-top: 1rem;
         padding: 1rem;
+        width: 100%;
+    }
+    .kurse-container {
         width: 70%;
+        margin: 0 auto;
+    
     }
 
 }
