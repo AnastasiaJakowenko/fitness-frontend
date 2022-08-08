@@ -9,12 +9,13 @@ function UserInfo() {
     const [isLogged] = login;
     const [userId, setUserId] = id;
 
-    console.log("userId aus zeile 12", userId);
-
+    
+    const baseUrl = `http://localhost:4000/info/`;
+    const [userInfo, setUserInfo] = useState([]);
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-        console.log("id: ", id)
+        
         const showUserInfo = async () => {
             setUserId(userId)
             // setUserId(userId.slice(3, userId.length - 1));
