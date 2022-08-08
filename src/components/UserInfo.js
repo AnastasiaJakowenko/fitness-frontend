@@ -13,8 +13,6 @@ function UserInfo() {
     const [userInfo, setUserInfo] = useState([]);
 
 
-    const baseUrl = `http://localhost:4000/info/`;
-    const [userInfo, setUserInfo] = useState([]);
     const [count, setCount] = useState(0);
 
     useEffect(() => {

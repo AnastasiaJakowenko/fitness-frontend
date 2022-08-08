@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About.js";
 import FitnessPlan from "./components/FitnessPlan.js";
 import Kurse from "./components/Kurse.js";
-import {Kurse2} from "./components/Kurse2.js"
+import {Kurse2Page} from "./pages/Kurse2Page.js"
 import { Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage.js";
 import { LoginPage } from "./pages/LoginPage.js";
@@ -46,7 +46,7 @@ function App() {
               <Route path="/userkurse" element={<UserKursePage />} />
               <Route path="/uservertraginfos" element={<UserVertragInfosPage />} />
               <Route path="/userkurse" element={<Calendar1 />} />
-               <Route path="/kurse" element={<Kurse2 />} />
+               <Route path="/kurse" element={<Kurse2Page />} />
               <Route path="/userInfo" element={<UserInfoPage />} />
             </Routes>
           </LogoutContextProvider>
