@@ -22,7 +22,7 @@ export const LoginContextProvider = (props) => {
         console.log("userId im logincontext vor slice ", userId)
         setUserId(cookieId.slice(3, cookieId.length - 1));
 
-        // console.log("userId in context", userId)
+        
     }, [isLogged]);
 
     useEffect(() => {
