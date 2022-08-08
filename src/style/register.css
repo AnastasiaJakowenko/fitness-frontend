@@ -2,8 +2,7 @@
 	padding: 2rem;
 	/* position: absolute; */
 	width: 100%;
-    background-color: #F4F4F4;
-
+	background-color: #f4f4f4;
 }
 
 h1 {
@@ -15,8 +14,9 @@ h1 {
 
 .register-container h3 {
 	color: #66b6ff;
+	text-align: center;
 }
-.adresseH3 {
+.adresse-h3 {
 	margin-top: 4rem;
 }
 .form-control {
@@ -43,17 +43,18 @@ h1 {
 	bottom: -2rem;
 }
 
+.inputText {
+	padding-left: 3rem;
+}
+
 .p-alert {
 	color: tomato;
 	font-weight: bold;
 }
 @media only screen and (min-width: 600px) {
-	
-	.register-container{
-        /* display: flex; */
+	.register-container {
+		/* display: flex; */
 		width: 35vw;
 		margin: auto;
 	}
-    
-	
 }

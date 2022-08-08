@@ -1,35 +1,23 @@
 import React from "react";
-// import { useState } from "react";
+import { useState } from "react";
 
-export class Toggle extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { isToggleOn: true };
+export function BookingBtn() {
+  const [isSelected, setIsSelected] = useState(true);
+  const btnClick = () => {
+    setIsSelected(!isSelected);
+  };
 
-    // This binding is necessary to make `this` work in the callback
-    this.handleClick = this.handleClick.bind(this);
-  }
+  const buttonStyle = isSelected
+    ? { backgroundColor: "white", color: "black" }
+    : { backgroundColor: "green", color: "white" };
 
-  handleClick() {
-    this.setState(prevState => ({
-      isToggleOn: !prevState.isToggleOn
-    }));
-  }
-
-  render() {
-    return (
-      <button onClick={this.handleClick}>
-        {this.state.isToggleOn ? 'Frei' : 'Gebucht'
-          // this.state.isToggleOn ? 'style={backgroundColor:"green", color:"white"}' : 'style={backgroundColor:"blue", color:"grey"}'
-
-
-
-
-        }
+  return (
+    <>
+      <button className="table-button" style={buttonStyle} onClick={btnClick}>
+        {isSelected ? "Frei" : "Gebucht"}
       </button>
-    );
-  }
-}
+    </>
+  );
+};
 
-<div id="root">
-</div>
+<div id="root"></div>;

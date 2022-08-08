@@ -104,11 +104,6 @@ abbr[title] {
   color: #F96a43;
 }
 
-.app {
-  position: relative;
-  display: inline-block;
-}
-
 .calendar-container {
   margin-left: 2rem;
   position: absolute;

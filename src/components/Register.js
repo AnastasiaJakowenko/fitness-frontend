@@ -1,9 +1,15 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import '../style/register.css';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
+import { useNavigate } from 'react-router-dom';
+import { RegisterContext } from "../context/registerContext.js";
 export const Register = () => {
+
+  const [isRegistered, setIsRegistered] = useContext(RegisterContext);
+  const navigate = useNavigate();
+
   const initialValues = {
     firstName: "",
     lastName: "",
@@ -50,14 +56,14 @@ export const Register = () => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
+    setIsRegistered(true);
     try {
       await axios.post("http://localhost:4000/register", formValues);
-      // console.log(data);
+      navigate('/');
     }
     catch (error) {
       console.log("Die Daten sind nicht geschickt", error);
     }
-
   }
 
   useEffect(() => {
@@ -70,8 +76,6 @@ export const Register = () => {
   const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-
-    // const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if (!values.firstName) {
       errors.firstName = "Vorname ist benötigt!";
@@ -98,19 +102,23 @@ export const Register = () => {
       errors.repassword = "Bitte Passwort wiederholen!";
     }
 
-    else if (!values.address.street) {
+    if (!values.age) {
+      errors.age = "Alter ist benötigt!!";
+    }
+
+    if (!values.address.street) {
       errors.street = "Straße ist benötigt!";
     }
 
-    else if (!values.address.number) {
+    if (!values.address.number) {
       errors.number = "Hausnummer ist benötigt!";
     }
 
-    else if (!values.address.city) {
+    if (!values.address.city) {
       errors.city = "Stadt ist benötigt!";
     }
 
-    else if (!values.address.zip) {
+    if (!values.address.zip) {
       errors.zip = "PLZ ist benötigt!";
     }
     return errors;
@@ -126,7 +134,7 @@ export const Register = () => {
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" >
             <i className="fa-solid fa-user icon"> </i>
-            <Form.Control type="text" placeholder="Vorname:" name="firstName" value={formValues.firstName} onChange={handleChange} />
+            <Form.Control className="inputText" type="text" placeholder="Vorname:" name="firstName" value={formValues.firstName} onChange={handleChange} />
           </Form.Group>
 
           <p className="p-alert">{formErrors.firstName}</p>
@@ -135,7 +143,7 @@ export const Register = () => {
             <i className="fa-solid fa-user icon"></i>
 
             <Form.Control type="text" placeholder="Nachname:" name="lastName" value={formValues.lastName}
-              onChange={handleChange} />
+              onChange={handleChange} className="inputText" />
           </Form.Group>
 
           <p className="p-alert">{formErrors.lastName}</p>
@@ -143,13 +151,14 @@ export const Register = () => {
           <Form.Group className="mb-3">
             <i className="fa-solid fa-person icon"></i>
 
-            <Form.Control type="number" placeholder="Alter:" name="age" value={formValues.age} onChange={handleChange} />
+            <Form.Control type="number" placeholder="Alter:" name="age" value={formValues.age} onChange={handleChange} className="inputText" />
+            <p className="p-alert">{formErrors.age}</p>
 
             <Form.Group className="mb-3">
 
               <i className="fa-regular fa-envelope icon"></i>
 
-              <Form.Control type="email" placeholder="Email:" name="email" value={formValues.email} onChange={handleChange} />
+              <Form.Control type="email" placeholder="Email:" name="email" value={formValues.email} onChange={handleChange} className="inputText" />
             </Form.Group>
 
             <p className="p-alert">{formErrors.email}</p>
@@ -157,14 +166,14 @@ export const Register = () => {
             <Form.Group className="mb-3">
 
               <i className="fa-solid fa-lock icon"></i>
-              <Form.Control type="password" placeholder="Passwort:" name="password" value={formValues.password} onChange={handleChange} />
+              <Form.Control type="password" placeholder="Passwort:" name="password" value={formValues.password} onChange={handleChange} className="inputText" />
             </Form.Group>
 
             <p className="p-alert">{formErrors.password}</p>
 
             <Form.Group className="mb-3">
               <i className="fa-solid fa-triangle-exclamation icon"> </i>
-              <Form.Control type="password" placeholder="Passwort bestätigen:" name="repassword" value={formValues.repassword} onChange={handleChange} />
+              <Form.Control type="password" placeholder="Passwort bestätigen:" name="repassword" value={formValues.repassword} onChange={handleChange} className="inputText" />
             </Form.Group>
 
             <p className="p-alert">{formErrors.repassword}</p>
@@ -172,22 +181,22 @@ export const Register = () => {
             <Form.Group className="mb-3">
               <i className="fa-solid fa-phone icon"></i>
 
-              <Form.Control type="text" placeholder="Tel.:" name="mobile" value={formValues.mobile} onChange={handleChange} />
+              <Form.Control type="text" placeholder="Tel.:" name="mobile" value={formValues.mobile} onChange={handleChange} className="inputText" />
 
             </Form.Group>
 
             <Form.Group className="mb-3">
               <i className="fa-solid fa-sack-dollar icon"></i>
 
-              <Form.Control type="text" placeholder="Bankverbindung:" name="accountNumber" value={formValues.accountNumber} onChange={handleChange} />
+              <Form.Control type="text" placeholder="Bankverbindung:" name="accountNumber" value={formValues.accountNumber} onChange={handleChange} className="inputText" />
 
             </Form.Group>
 
           </Form.Group>
-          <h3 className="adresseH3"> Adresse:</h3>
+          <h3 className="adresse-h3"> Adresse:</h3>
           <Form.Group className="mb-3">
             <i className="fa-solid fa-road icon"></i>
-            <Form.Control type="text" placeholder="Straße:" name="street" value={formValues.address.street} onChange={handleAddressChange} />
+            <Form.Control type="text" placeholder="Straße:" name="street" value={formValues.address.street} onChange={handleAddressChange} className="inputText" />
           </Form.Group>
 
           <p className="p-alert">{formErrors.street}</p>
@@ -195,7 +204,7 @@ export const Register = () => {
           <Form.Group className="mb-3">
 
             <i className="fa-solid fa-house-chimney-user icon"></i>
-            <Form.Control type="number" placeholder="Hausnummer:" name="number" value={formValues.number} onChange={handleAddressChange} />
+            <Form.Control type="number" placeholder="Hausnummer:" name="number" value={formValues.number} onChange={handleAddressChange} className="inputText" />
           </Form.Group>
 
           <p className="p-alert">{formErrors.number}</p>
@@ -203,7 +212,7 @@ export const Register = () => {
           <Form.Group className="mb-3">
             <i className="fa-solid fa-city icon"></i>
 
-            <Form.Control type="text" placeholder="Stadt:" name="city" value={formValues.city} onChange={handleAddressChange} />
+            <Form.Control type="text" placeholder="Stadt:" name="city" value={formValues.city} onChange={handleAddressChange} className="inputText" />
 
           </Form.Group>
 
@@ -212,12 +221,11 @@ export const Register = () => {
           <Form.Group className="mb-3">
 
             <i className="fa-solid fa-list-ol icon"></i>
-            <Form.Control type="number" placeholder="PLZ:" name="zip" value={formValues.zip} onChange={handleAddressChange} />
+            <Form.Control type="number" placeholder="PLZ:" name="zip" value={formValues.zip} onChange={handleAddressChange} className="inputText" />
           </Form.Group>
 
           <p className="p-alert">{formErrors.zip}</p>
 
-          {/* <Button variant="primary" type="submit" onSubmit={handleSubmit}> */}
           <Button variant="primary" type="submit">
             Registrieren
           </Button>

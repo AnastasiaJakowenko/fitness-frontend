@@ -27,8 +27,8 @@ function Sidebar() {
       <a className="menu-item" href="/usereinstellungen">
         <i className="fa-solid fa-gear"></i><p>Einstellungen</p>
       </a>
-      <a className="menu-item" href="/userpanel">
-        <i className="fa-solid fa-user"></i><p>User</p>
+      <a className="menu-item" href="/userPanel">
+        <i className="fa-solid fa-user"></i>
       </a>
     </Menu>
   );

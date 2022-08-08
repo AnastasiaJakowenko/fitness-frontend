@@ -16,6 +16,10 @@
 
 }
 
+.userKurseNavRechts .fa-calendar-days {
+  color: #f96a43;
+}
+
 .userKurseNavRechts p {
   font-weight: bold;
   margin-bottom: 0rem;
@@ -103,8 +107,19 @@ caption {
   display: none;
 }
 
-/* media querry */
+.td-button {
+  padding: 0rem;
+}
 
+.table-button{
+  width: 100%;
+  height: 2.5rem;
+  background-color:white;
+  border-radius: 0.5rem;
+}
+
+
+/* media query */
 
 @media only screen and (min-width: 600px) {
 
@@ -137,21 +152,16 @@ caption {
   .slide_text {
     display: block;
     text-align: justify;
+    width: 45vw;
   }
 
   .userKurse {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     margin: 2rem;
     gap: 2rem;
   }
-
-  .userKurseNavRechts .fa-calendar-days {
-    color: #f96a43;
-  }
-
- 
-
 }
 
 /*tablet*/

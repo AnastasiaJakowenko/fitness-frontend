@@ -1,6 +1,6 @@
 import "../style/userkurse_slide_show.css";
 
-function Userkurse_slide_show() {
+function UserKurseSlideShow() {
   return (
     <>
       <div className="about_slideshow">
@@ -28,4 +28,4 @@ function Userkurse_slide_show() {
     </>
   );
 }
-export default Userkurse_slide_show;
+export default UserKurseSlideShow;

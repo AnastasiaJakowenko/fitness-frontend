@@ -3,7 +3,7 @@ import "../style/userkurse.css";
 import { useState } from "react";
 import { Calendar1 } from "./Calendar1.js";
 import { UserKurseTabellen } from "./UserKurseTabellen.js";
-import Userkurse_slide_show from "./userkurse_slide_show";
+import UserKurseSlideShow from "./UserKurseSlideShow.js";
 
 function UserKurse() {
   // zum backend schicken
@@ -88,7 +88,7 @@ function UserKurse() {
           {buttonClickedSelbstverteidigung && (<UserKurseTabellen date={date} kurs={"Selbstverteidigung"} />)}
         </div>
         <div className="slide_text">
-          <Userkurse_slide_show />
+          <UserKurseSlideShow />
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed
             lacus
             pulvinar, sagittis ligula a, pretium erat. Sed condimentum tincidunt quam, eget iaculis magna
