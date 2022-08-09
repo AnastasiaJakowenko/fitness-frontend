@@ -28,7 +28,7 @@ export const Kurse2 = () => {
 
 
                 <div>
-                    <h3>Selbstferteidigung</h3>
+                    <h3>Selbstverteidigung</h3>
                     <div className='youtobe-box'>
 
                         <ReactPlayer url='https://www.youtube.com/watch?v=Tj7kXi-DCEE' className="video" controls />

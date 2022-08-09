@@ -17,7 +17,7 @@ function Kurse() {
                 alt="First slide"
               />
               <Carousel.Caption className="h3container">
-                <h3>Yoga</h3>
+                <a href="/kurse"><h3>Yoga</h3></a>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -27,7 +27,7 @@ function Kurse() {
                 alt="Second slide"
               />
               <Carousel.Caption className="h3container">
-                <h3>Yoga</h3>
+              <a href="/kurse"><h3>Yoga</h3></a>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -37,7 +37,7 @@ function Kurse() {
                 alt="Third slide"
               />
               <Carousel.Caption className="h3container">
-                <h3>Yoga</h3>
+              <a href="/kurse"><h3>Yoga</h3></a>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
@@ -52,7 +52,8 @@ function Kurse() {
                 alt="First slide"
               />
               <Carousel.Caption className="h3container">
-                <h3>Selbstverteidigung</h3>
+              <a href="/kurse"><h3>Selbstverteidigung</h3></a>
+              
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -62,7 +63,7 @@ function Kurse() {
                 alt="Second slide"
               />
               <Carousel.Caption className="h3container">
-                <h3>Selbstverteidigung</h3>
+              <a href="/kurse"><h3>Selbstverteidigung</h3></a>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -72,7 +73,7 @@ function Kurse() {
                 alt="Third slide"
               />
               <Carousel.Caption className="h3container">
-                <h3>Selbstverteidigung</h3>
+              <a href="/kurse"><h3>Selbstverteidigung</h3></a>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
@@ -87,7 +88,7 @@ function Kurse() {
                 alt="First slide"
               />
               <Carousel.Caption className="h3container">
-                <h3>Zumba</h3>
+              <a href="/kurse"><h3>Zumba</h3></a>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -97,7 +98,7 @@ function Kurse() {
                 alt="Second slide"
               />
               <Carousel.Caption className="h3container">
-                <h3>Zumba</h3>
+              <a href="/kurse"><h3>Zumba</h3></a>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -107,7 +108,7 @@ function Kurse() {
                 alt="Third slide"
               />
               <Carousel.Caption className="h3container">
-                <h3>Zumba</h3>
+              <a href="/kurse"><h3>Zumba</h3></a>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
