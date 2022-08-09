@@ -9,40 +9,18 @@ function UserInfo() {
     const [isLogged] = login;
     const [userId, setUserId] = id;
 
-    console.log("userId aus zeile 12", userId);
-
     const baseUrl = `http://localhost:4000/info/`;
     const [userInfo, setUserInfo] = useState([]);
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-        console.log("id: ", id)
         const showUserInfo = async () => {
             setUserId(userId)
-            // setUserId(userId.slice(3, userId.length - 1));
-            console.log("userId von userInfo", userId)
             const userInfo = await axios.get(`${baseUrl}${userId}`,{withCredentials: true});
             setUserInfo(userInfo.data);
         }
         showUserInfo();
-    }, [])
-
-
-  /* useEffect(() => {
-        const showUserInfo = async () => {
-
-            if (userId) {
-                // let convertUserId = userId.slice(3, userId.length - 1);
-                setUserId(userId.slice(3, userId.length - 1));
-                console.log("userId in UserInfo", userId);
-                const userInfo = await axios.get(`${baseUrl}${userId}`);
-                setUserInfo(userInfo.data);
-            }
-        }
-        showUserInfo();
-    }, [])*/
-
-
+    }, [id])
 
     return (
         <>
