@@ -50,15 +50,11 @@ function UserSportgeraete() {
                                     className="fa-regular fa-calendar-days "
                                 ></i>
                             </div>
-                            <div>
-                                <i className="fa-solid fa-circle-arrow-left"></i>
-                            </div>
+
                             <div onClick={() => new Date()()}>
                                 <p>Heute</p>
                             </div>
-                            <div>
-                                <i className="fa-solid fa-circle-arrow-right"></i>
-                            </div>
+
                         </div>
                     </div>
                     {calendar && (
