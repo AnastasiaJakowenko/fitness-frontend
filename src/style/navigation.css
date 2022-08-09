@@ -62,3 +62,11 @@ i:hover {
 .burgermenu p a:hover {
 	color: #ff8966;
 }
+/* .kurse_link{
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  .kurse_link{
+    display: block;
+  }
+  } */

@@ -8,12 +8,12 @@ function UserInfo() {
     const { login, id } = useContext(LoginContext);
     const [isLogged] = login;
     const [userId, setUserId] = id;
-
     const baseUrl = `http://localhost:4000/info/`;
     const [userInfo, setUserInfo] = useState([]);
     const [count, setCount] = useState(0);
 
     useEffect(() => {
+        
         const showUserInfo = async () => {
             setUserId(userId)
             const userInfo = await axios.get(`${baseUrl}${userId}`,{withCredentials: true});
