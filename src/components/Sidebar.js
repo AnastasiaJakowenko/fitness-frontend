@@ -21,14 +21,14 @@ function Sidebar() {
       <a className="menu-item" href="/kalorienrechner">
         <i className="fa-solid fa-burger"></i><p>Kalorien-Rechner</p>
       </a>
-      <a className="menu-item" href="/uservertraginfos">
+      {/* <a className="menu-item" href="/uservertraginfos">
         <i className="fa-solid fa-file-contract"></i><p>Vertgragsinfo</p>
       </a>
       <a className="menu-item" href="/usereinstellungen">
         <i className="fa-solid fa-gear"></i><p>Einstellungen</p>
-      </a>
+      </a> */}
       <a className="menu-item" href="/userPanel">
-        <i className="fa-solid fa-user"></i>
+        <i className="fa-solid fa-user"></i><p>User</p>
       </a>
     </Menu>
   );

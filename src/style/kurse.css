@@ -22,7 +22,10 @@
     padding: 0.2rem;
     border-radius: 0.5rem;
 }
-
+.kurse a {
+    text-decoration: none;
+    color: white;
+}
 .h3container {
     display: flex;
     justify-content: center;
