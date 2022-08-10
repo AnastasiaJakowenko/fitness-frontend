@@ -18,7 +18,7 @@ function FitnessPlan() {
         <h3 className="fitness-h3"><i className="fa-regular fa-calendar-days"></i> 1 Jahr</h3>
         <p className="fitness-p">Attack feet behind the couch destroy couch flop over give attitude hide when guests come over hopped</p>
         <div className="fitness-button-div">
-          <button className="fitness-button" ><a href="register">Register</a></button>
+          <button className="fitness-button" ><a href="/register">Register</a></button>
         </div>
         </div>
         </div>
