@@ -1,14 +1,7 @@
 import React from "react";
-// import { useState } from "react";
 import { BookingBtn } from "./UserKurseTabellenButton.js";
 
 export function UserKurseTabellen(props) {
-  // const [isActive, setIsActive] = useState(false);
-  // const [buttonText, setButtonText] = useState("Frei");
-/*   const handleClick = () => {
-    // setIsActive((current) => !current);
-    // setButtonText();
-  }; */
 
   return (
     <>

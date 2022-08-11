@@ -51,34 +51,28 @@ function UserInfo() {
 
                         {isLogged ? (
                             userInfo.map((item, i) => {
+                                const courseArr = item.course_ids.map((c, i) => {
+                                    return (
+                                        <li key={i}>
+                                            {c.course_name}
+                                        </li>
+                                    )
+                                })
+                                const devicesArr = item.device_ids.map((d, i) => {
+                                    return (
+                                        <li key={i}>
+                                            {d.device_name}
+                                        </li>
+                                    )
+                                })
                                 return (
                                     <div key={i}>
                                         <p><b>Vorname: </b>{item.firstName} </p>
                                         <p><b>Nachname: </b>{item.lastName} </p>
-                                        <p><b>Kurse:</b></p>
-                                        {item.course_ids.map((c, i) => {
-
-                                            return (
-                                                <li key={i}>
-                                                    {c.course_name}
-                                                </li>
-
-                                            )
-
-                                        })}
-
-                                        <p><b>Geräte:</b></p>
-                                        {item.device_ids.map((d, i) => {
-
-                                            return (
-                                                <li key={i}>
-                                                    {d.device_name}
-                                                </li>
-
-                                            )
-
-                                        })}
-
+                                        <p><b>Kurse:</b>
+                                        {courseArr.length ? courseArr : " Keine Kurse gebucht"}</p>
+                                        <p><b>Geräte:</b>
+                                        {devicesArr.length ? devicesArr : " Keine Geräte gebucht"}</p>
                                     </div>
                                 )
                             })
