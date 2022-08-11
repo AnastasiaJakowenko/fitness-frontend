@@ -77,7 +77,6 @@ const Bmi = () => {
             <div className="ergebnisse_container" style={{ color: bmiColor }}>
 
                 <h1 className="ergebnisse">{bmi}</h1>
-                {/* <h2 className="ergebnisse">{info}</h2> */}
             </div>
             <h2 className="ergebnisse_info">{info}</h2>
             <p> {recomendations}</p>
@@ -88,17 +87,3 @@ const Bmi = () => {
 
 export default Bmi;
 
-
-// if (val < 18.5) {
-//     setbmiColor("#28b1de")
-//      setInfo("Untergewicht");
-//  } else if (val > 18.5 && val <= 24.9) {
-//      setbmiColor("#25aa1e")
-//      setInfo("Normalgewicht");
-//  } else if (val > 24.9 && val < 30) {
-//      setbmiColor("#dc9835")
-//      setInfo("Übergewicht");
-//  } else {
-//      setbmiColor("#e54915")
-//      setInfo("Adipositas");
-//  }

@@ -1,9 +1,8 @@
+
 .kurse-container {
     padding: 1rem;
     font-family: 'Josefin Sans', sans-serif;
     font-size: larger;
-
-
 }
 
 .video {
@@ -48,10 +47,11 @@
         padding: 1rem;
         width: 100%;
     }
+
     .kurse-container {
         width: 70%;
         margin: 0 auto;
-    
+
     }
 
 }
