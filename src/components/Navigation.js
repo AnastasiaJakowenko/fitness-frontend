@@ -23,15 +23,24 @@ function Navigation() {
     const navClass = "nav-link"
     const navContainer = "nav-container";
     if (isRegistered) {
-      return (<a className={navClass} href="/login" onClick={handleLogin}>
+      return (
+        
+      
+      <a className={navClass} href="/login" onClick={handleLogin}>
         Einloggen
-      </a>)
+      </a>
+      )
     }
     if (isLogged) {
-      return (<a className={navClass} href="/logout" onClick={(e) => { e.preventDefault(); logout() }}>
+      return (
+        <div className={navContainer}>
+          <a className={navClass} href="/kurse">Kurse</a>
+      <a className={navClass} href="/logout" onClick={(e) => { e.preventDefault(); logout() }}>
         Ausloggen
-      </a>)
-    }
+      </a>
+
+          </div>
+   ) }
     return (
       <div className={navContainer}>
         <a className={navClass} href="/kurse">Kurse</a>
