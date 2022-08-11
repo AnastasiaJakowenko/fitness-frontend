@@ -83,7 +83,7 @@ function Kurse() {
           <Carousel interval={null}>
             <Carousel.Item>
               <img
-                className="d-flex w-70 h-70"
+                className="d-flex w-70 h-70 mb-2"
                 src={require("../img/carousel/zumba/zumba1.jpeg")}
                 alt="First slide"
               />
@@ -93,7 +93,7 @@ function Kurse() {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-flex w-70 h-70"
+                className="d-flex w-70 h-70 mb-2"
                 src={require("../img/carousel/zumba/zumba2.jpg")}
                 alt="Second slide"
               />
@@ -103,7 +103,7 @@ function Kurse() {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-flex w-70 h-70"
+                className="d-flex w-70 h-70 mb-2"
                 src={require("../img/carousel/zumba/zumba3.jpg")}
                 alt="Third slide"
               />

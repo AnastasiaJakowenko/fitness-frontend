@@ -4,7 +4,7 @@ import "../style/bmi_diagramm.css";
 function Bmi_diagramm() {
   return (
     <>
-      <ul class="chart-skills">
+      <ul className="chart-skills">
         <li>
           <span>18,5</span>
         </li>
