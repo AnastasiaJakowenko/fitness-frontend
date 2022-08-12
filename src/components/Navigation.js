@@ -3,6 +3,7 @@ import "../style/navigation.css";
 import Sidebar from "./Sidebar.js";
 import { RegisterContext } from "../context/registerContext.js";
 import { LoginContext, LogoutContext } from "../context/loginContext.js";
+
 function Navigation() {
   const [isRegistered, setIsRegistered] = useContext(RegisterContext);
   // const [isLogged, setIsLogged] = useContext(LoginContext);
@@ -13,6 +14,8 @@ function Navigation() {
   const [isLogged, setIsLogged] = login;
   const [userId, setUserId] = id;
   const logoutHandler = logout;
+
+
   const handleRegister = () => {
     setIsRegistered(true);
   }
@@ -23,10 +26,8 @@ function Navigation() {
     const navClass = "nav-link"
     const navContainer = "nav-container";
     if (isRegistered) {
-      return (
-        
-      
-      <a className={navClass} href="/login" onClick={handleLogin}>
+      return (      
+        <a className={navClass} href="/login" onClick={handleLogin}>
         Einloggen
       </a>
       )
