@@ -22,6 +22,7 @@ function Navigation() {
   const handleLogin = () => {
     setIsLogged(true);
   }
+  
   const setLoginRegisterButton = () => {
     const navClass = "nav-link"
     const navContainer = "nav-container";
