@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import Bmi_diagramm from "./Bmi_diagramm";
+
 import "../style/bmi.css"
 const Bmi = () => {
     const [bmi, setBmi] = useState();
     const [info, setInfo] = useState();
-    const [height, setHeight] = useState();
-    const [weight, setWeight] = useState();
+    const [height, setHeight] = useState(0);
+    const [weight, setWeight] = useState(0);
     const [recomendations, setRecomendations] = useState()
     const [bmiColor, setbmiColor] = useState()
 
-    const handleBmi = () => {
+    const handleBmi = () => {        
         let val = (
-            [Number(weight) / Number(height) / Number(height)] * 10000
+            [weight / height /  height] * 10000
         ).toFixed(1);
+        if (val> 16 && val < 34){
         setBmi(val);
         if (val < 18.5) {
             setRecomendations(
@@ -51,21 +53,28 @@ const Bmi = () => {
             setbmiColor("#e54915")
             setInfo("Adipositas");
         }
+    }else{
+        setInfo("falsche Eingabe")
+    }
     };
     return (
         <div className="container">
             <h1 className="bmi_h1">BMI Calculator</h1>
 
             <div className="input_container">
-                <input className="input_bmi"
-                    type="text"
+                
+                <input className="input_bmi"                    
+                    
+                    type="number" step={1}             
                     onChange={(e) => setHeight(e.target.value)}
                     placeholder="Größe in cm"
-                />
+                                    />
                 <input className="input_bmi"
-                    type="text"
+                    required
+                    type="number" step = {0.01}                     
                     onChange={(e) => setWeight(e.target.value)}
                     placeholder="Gewicht in kg"
+                    
                 />
             </div>
             <div className="bmi_button_container">
