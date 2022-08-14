@@ -16,19 +16,25 @@ const KalorienRechner = () => {
     }
 
     const handleKalorienZahl = () => {
-
+       if(weight > 2 && height > 40 && age > 1){       
         let mannerFormel = (66.47 + (13.7 * Number(weight)) + (5 * Number(height)) - (6.8 * Number(age))).toFixed(0)
         let frauenFormel = (655.1 + (9.6 * Number(weight)) + (1.8 * Number(height)) - (4.7 * Number(age))).toFixed(0)
-       
         let val;
         if (gender === "Male") {
             val = mannerFormel
         } else {
             val = frauenFormel
         }
-        setkalorienZahl(val);
-       setInfo("Deine tägliche Kalorienbedarf ist ")
-       setInfo2("Kalorien pro Tag")
+       setkalorienZahl(val);
+    //    setInfo("Deine tägliche Kalorienbedarf ist ")
+    //    setInfo2("Kalorien pro Tag")
+        setInfo("Dein Tagesbedarf beträgt : ")
+        setInfo2("Kcal")
+
+       }else{
+        setInfo("Eingabe falsch")
+       }
+        
     };
     return (
         <div className="container">
@@ -36,12 +42,12 @@ const KalorienRechner = () => {
 
             <div className="input_container1">
                 <input className="input_bmi"
-                    type="text"
+                    type="number" step={1}
                     onChange={(e) => setHeight(e.target.value)}
                     placeholder="Größe in cm"
                 />
                 <input className="input_bmi"
-                    type="text"
+                    type="number" step={1}
                     onChange={(e) => setAge(e.target.value)}
                     placeholder="Alter"
                 />
@@ -60,7 +66,7 @@ const KalorienRechner = () => {
             
 
                 <input className="input_bmi  weight"
-                type="text"
+                type="number" step={0.01}
                 onChange={(e) => setWeight(e.target.value)}
                 placeholder="Gewicht in kg"
                 />
