@@ -2,6 +2,7 @@ import "../style/editUser.css"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useRef } from "react";
+
 import { useState, useEffect, useContext } from "react";
 import { LoginContext } from "../context/loginContext.js";
 import axios from "axios";
@@ -125,6 +126,7 @@ function EditUser() {
 
     </>
   )
+
 }
 
 export default EditUser;
