@@ -5,12 +5,15 @@ import "../style/sidebar.css";
 import { useContext, useState, useEffect } from 'react';
 
 
+
 function Sidebar() {
 
   const { login, id } = useContext(LoginContext);   
   const [isLogged, setIsLogged] = login;
 
+
   const changeNavigation = () => {
+
 
     
     if (isLogged) {
@@ -58,7 +61,9 @@ function Sidebar() {
   return (
     <>
 
+
       {changeNavigation ()}      
+
 
     </>
   );
