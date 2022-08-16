@@ -10,13 +10,12 @@ function UserInfo() {
     const [userId, setUserId] = id;
     const baseUrl = `http://localhost:4000/info/`;
     const [userInfo, setUserInfo] = useState([]);
-    const [count, setCount] = useState(0);
 
     useEffect(() => {
-        
+
         const showUserInfo = async () => {
             setUserId(userId)
-            const userInfo = await axios.get(`${baseUrl}${userId}`,{withCredentials: true});
+            const userInfo = await axios.get(`${baseUrl}${userId}`, { withCredentials: true });
             setUserInfo(userInfo.data);
         }
         showUserInfo();
@@ -70,9 +69,9 @@ function UserInfo() {
                                         <p><b>Vorname: </b>{item.firstName} </p>
                                         <p><b>Nachname: </b>{item.lastName} </p>
                                         <p><b>Kurse:</b>
-                                        {courseArr.length ? courseArr : " Keine Kurse gebucht"}</p>
+                                            {courseArr.length ? courseArr : " Keine Kurse gebucht"}</p>
                                         <p><b>Geräte:</b>
-                                        {devicesArr.length ? devicesArr : " Keine Geräte gebucht"}</p>
+                                            {devicesArr.length ? devicesArr : " Keine Geräte gebucht"}</p>
                                     </div>
                                 )
                             })
