@@ -14,7 +14,7 @@ const Bmi = () => {
         let val = (
             [weight / height /  height] * 10000
         ).toFixed(1);
-        if (val> 16 && val < 34){
+        if (val> 10 && val < 40){
         setBmi(val);
         if (val < 18.5) {
             setRecomendations(
@@ -65,13 +65,13 @@ const Bmi = () => {
                 
                 <input className="input_bmi"                    
                     
-                    type="number" step={1}             
+                    type="number" min="1" max="250" step={1}             
                     onChange={(e) => setHeight(e.target.value)}
                     placeholder="Größe in cm"
                                     />
                 <input className="input_bmi"
                     required
-                    type="number" step = {0.01}                     
+                    type="number"min="1" max="300" step = {1}                     
                     onChange={(e) => setWeight(e.target.value)}
                     placeholder="Gewicht in kg"
                     

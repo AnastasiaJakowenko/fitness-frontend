@@ -36,7 +36,7 @@ function Sidebar() {
           <a className="menu-item" href="/kalorienrechner">
             <i className="fa-solid fa-burger"></i><p>Kalorien-Rechner</p>
           </a>        
-          <a className="menu-item" href="/userPanel">
+          <a className="menu-item" href="/userInfo">
             <i className="fa-solid fa-user"></i><p>User</p>
           </a>
       </Menu>
