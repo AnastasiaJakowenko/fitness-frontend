@@ -2,15 +2,19 @@ import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import { LoginContext} from "../context/loginContext";
 import "../style/sidebar.css";
-import { useContext} from "react";
+import { useContext, useState, useEffect } from 'react';
+
 
 
 function Sidebar() {
 
   const { login, id } = useContext(LoginContext);   
   const [isLogged, setIsLogged] = login;
-  
-  const setNavigation = () => {
+
+
+  const changeNavigation = () => {
+
+
     
     if (isLogged) {
       return (
@@ -49,13 +53,18 @@ function Sidebar() {
         <a className="menu-item" href="/kalorienrechner">
           <i className="fa-solid fa-burger"></i><p>Kalorien-Rechner</p>
         </a>      
+
     </Menu>
     )
   }
 
   return (
     <>
-      {setNavigation ()}      
+
+
+      {changeNavigation ()}      
+
+
     </>
   );
 }

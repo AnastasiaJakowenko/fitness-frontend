@@ -5,6 +5,7 @@ import { RegisterContext } from "../context/registerContext.js";
 import { LoginContext, LogoutContext } from "../context/loginContext.js";
 
 function Navigation() {
+  
   const [isRegistered, setIsRegistered] = useContext(RegisterContext);
   // const [isLogged, setIsLogged] = useContext(LoginContext);
   const { login, id } = useContext(LoginContext);
