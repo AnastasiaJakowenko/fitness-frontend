@@ -1,8 +1,8 @@
-import "../style/ChangeUserData.css"
+import "../style/editUser.css"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useRef } from "react";
-function ChangeUserData() {
+function EditUser() {
 
     const inputRef = useRef();
     return (
@@ -100,4 +100,4 @@ function ChangeUserData() {
     )
 }
 
-export default ChangeUserData;
+export default EditUser;
