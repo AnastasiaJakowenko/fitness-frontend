@@ -42,7 +42,7 @@ function UserInfo() {
 
                     })) : (<h3> Hallo user!</h3>)}
 
-                    <a href="#"><i className="fa-solid fa-pen-to-square"></i></a>
+                    <a href="/edituser"><i className="fa-solid fa-pen-to-square"></i></a>
                 </div>
                 <div className="container_white">
                     <h2>Informationen</h2>
