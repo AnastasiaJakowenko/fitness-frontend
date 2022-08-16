@@ -54,12 +54,13 @@
 	color: #c8c6c6;
 	position: relative; /* um icons zu positionieren*/
 	bottom: -2rem;
+	font-size: 17px;
 }
 .inputText {
 	padding-left: 3rem;
 }
 .form-control {
 	border-bottom: 2px solid black;
-	padding-left: 3rem; /*damit der tex vom imputfeld nicht so nah zu icon steht*/
+	padding-left: 2rem; /*damit der tex vom imputfeld nicht so nah zu icon steht*/
 	background-color: #f4f4f4;
 }
