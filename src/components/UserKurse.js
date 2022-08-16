@@ -5,6 +5,7 @@ import { Calendar1 } from "./Calendar1.js";
 import { UserKurseTabellen } from "./UserKurseTabellen.js";
 import UserKurseSlideShow from "./UserKurseSlideShow.js";
 
+
 function UserKurse() {
   // zum backend schicken
   /*     const dateSlots = [{
@@ -14,6 +15,8 @@ function UserKurse() {
                 zumba: [17]
             }
         }] */
+
+    
 
   const [date, setDate] = useState(new Date());
   const [calendar, setCalendar] = useState(false);
